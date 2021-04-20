@@ -37,20 +37,11 @@ app.get('/', (req, res)=>{
 //when user clicks certifications in navbar renders all certs (certifications.ejs)
 //shuffled results
 app.get('/allcertifications', (req, res)=>{
-	const {cat} = req.query
 	let title = "All Certifications - Cert Guru"
-	let filteredContent = filter(cat)
 	let dataArray = new shuffle(data).shuffle()
-	//check if filter code is run, if yes, render filtered.ejs
-	if(filteredContent.length > 0){
-		description = `Find all certifications for ${cat}`
-		res.render('filtered', {filteredContent, noDupes, title, description, advertised, cat})
-	}
-	else{
-		//render all certs
-		description = `All certifications`
-		res.render('certifications', {dataArray, noDupes, title, description, advertised})
-	}
+	//render all certs
+	description = `All certifications`
+	res.render('certifications', {dataArray, noDupes, title, description, advertised})
 })
 //==================================================================
 //when user hovers over certifications in navbar

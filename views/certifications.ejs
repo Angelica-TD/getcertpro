@@ -8,7 +8,7 @@
           <input type="text" placeholder="Search.." id="filter-input">
             <a href="/allcertifications">All</a>
             <%for(let item in noDupes){%>
-            <a href="/allcertifications?filterby=<%= noDupes[item] %>"><%= noDupes[item] %></a>
+            <a href="/categories/<%= noDupes[item] %>"><%= noDupes[item] %></a>
             <%}%>
         </div>
     </div>
