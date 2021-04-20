@@ -1,0 +1,25 @@
+1. Add "Ad" next to "other". Ad appears in red letters next to image.
+2. Add contuct us form - done, need to write script
+3. Click counter for each course - javascript
+4. Create a field in data.json to populate carousel
+5. add key wokds, "Microsoft, Cisco, Cloud, Netwokring, Programming, Certification, Free Certification, Courses, Free Courses." - White - done adding some words
+
+
+6. fix footer, fix it to bottom of page
+7. set optimal size of images
+
+
+
+# open page report
+
+task 3:
+-in a separate js file
+-document.querySelectorAll on <a> tags, save to a variable
+-add eventlistener to it
+-whenever one of them gets clicked add one to counter
+
+
+
+
+
+

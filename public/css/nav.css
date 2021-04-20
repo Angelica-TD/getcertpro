@@ -1,0 +1,24 @@
+.my-container{
+    display: flex;
+    /* overflow: hidden; */
+}
+
+/* .certs-menu{
+    display: flex;
+    
+} */
+
+.dropdown-container{
+    display: none;
+    width: 100%;
+    /* display: flex; */
+    z-index: 9;
+    background-color: aliceblue;
+    position: absolute;
+    left: 0;
+}
+
+
+/* .certs:hover .certs-menu{
+    display: flex;
+} */

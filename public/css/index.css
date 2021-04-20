@@ -1,0 +1,59 @@
+.carousel-link{
+	color: #ffffff;
+	text-decoration: none;
+}
+
+.carousel-link:hover{
+	color: #f0f0f0;
+}
+
+.link{
+	color: #000000;
+	text-decoration: none;
+}
+
+.custom-img{
+	width: 200px;
+	height: 100px;
+	object-fit: contain;
+}
+
+.my-wrap{
+	flex-wrap: wrap;
+}
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+	margin-bottom: 4rem;
+  }
+  /* Since positioning the image, we need to help out the caption */
+  .carousel-caption {
+	bottom: 3rem;
+	z-index: 10;
+  }
+  
+  /* Declare heights because of positioning of img element */
+  .carousel-item {
+	height: 32rem;
+  }
+  .carousel-item > img {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	opacity: .9;
+	object-fit: fill;
+	/* object-position: 0% -50%; */
+  }
+
+  /* Center align the text within the three columns below the carousel */
+.top-certs .col-lg-4 {
+	margin-bottom: 1.5rem;
+	text-align: center;
+  }
+
+  .card{
+	  margin: 0 auto;
+  }

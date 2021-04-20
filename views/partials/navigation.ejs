@@ -1,0 +1,45 @@
+<nav class="py-4 navbar-light bg-light navbar-expand-lg navbar">
+	<div class="container">
+		<a href="/" class="link me-4 logo">
+			<div>Logo</div>
+		</a>
+		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<div class="navbar-nav">
+				<a href="/" class="link me-4 nav-item">
+				<div>Home</div>
+				</a>
+				
+				<div class="certs me-4">
+					<a href="/allcertifications" class="link dropdown-hover nav-item">
+						Certifications
+					</a>
+					<div class="dropdown-container py-3">
+						<div class="my-container my-wrap container">
+							<%for(let item in noDupes){%>
+											
+								<div>
+									<a class="col-4 link me-4" href="/categories/<%= noDupes[item] %>">
+											
+										<%= noDupes[item] %>
+									</a>	
+								</div>
+								
+							<%}%>
+						</div>
+					
+					</div>
+				</div><!-- </certs> -->
+				<a href="/contact" class="link nav-item">
+					<div>Contact us</div>
+				</a>
+			</div><!-- </navbar-nav> -->
+		</div><!-- </collapse> -->
+	</div><!-- </container> -->
+	
+
+</nav>
+<script type="text/javascript" src="/js/navHover.js"></script>

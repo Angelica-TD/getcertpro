@@ -1,0 +1,23 @@
+<% layout('layouts/boilerplate')%>
+
+
+	<div class="container top-certs">
+		<h2>Top Certifications</h2>
+		<div class="row">
+			<%for(let item of top){%>
+			<div class="col-lg-4">
+				<a href="<%= item.url %>" target="_blank" class="link">
+					<%if(item.bgimage){%>
+						<img src="<%= item.bgimage %>" class="img-fluid custom-img mx-auto d-block" alt="...">
+					<%}else{%>
+						<img alt="" class="custom-img">
+					<%}%>
+					<h2><%=item.name%></h2>
+					<p><%=item.description%></p>
+					<!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
+				</a>
+			</div><!-- /.col-lg-4 -->	
+			<%}%>
+		</div><!-- /.row -->
+
+	</div>

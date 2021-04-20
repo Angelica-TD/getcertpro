@@ -1,0 +1,19 @@
+<%- include('partials/head') %>
+<body>
+	<!-- START NAV -->
+	<!-- END NAV -->
+
+
+	<label for="cat">Search by category:</label>
+
+        <select name="category-select" id="cat">
+            <%for(let item in noDupes){%>
+				<a href=""><option value="<%= noDupes[item] %>"><%= noDupes[item] %></option></a>
+			<%}%>
+        
+        </select>
+
+
+<script type="text/javascript" src="/js/dropdown.js"></script>
+</body>
+</html>

@@ -1,0 +1,300 @@
+{  
+    "allcerts": [
+    {	
+        "name": "Cisco Certified Network Associcate (CCNA)",
+        "area": "IT",
+        "company": "Cisco",
+        "description": "Achieving CCNA certification is the first step in preparing for a career in IT technologies. To earn CCNA certification, you pass one exam that covers a broad range of fundamentals for IT careers, based on the latest networking technologies, software development skills, and job roles. The CCNA Preparation Bundle helps you prepare to take the 200-301 Cisco Certified Network Associate (CCNA) exam. Included in the bundle are Implementing and Administering Cisco Solutions, Cisco exam review and CCNA Exam Voucher.",
+        "alt": "image",
+        "logo": "/images/ciscologo.png",
+        "bgimage":"https://cdn.hipwallpaper.com/i/93/17/ywrWlP.png",
+        "url": "https://learningnetworkstore.cisco.com/on-demand-e-learning/ccna-preparation-bundle-eltex-ccnaprep-v1-023646",
+        "hidden": "Yes",
+        "type": ["Certification", "Association"],
+        "category": ["Networking"],
+        "other":[3, "ad"]  
+    },
+      
+    {   
+        "name": "Mimecast Certified Product Professional (MCPP)",
+        "area": "IT",
+        "company": "Mimecast",
+        "description": "This will help you stay ahead, be productive faster, maximize your investment in Mimecast, and receive recognition as a Mimecast Expert. Start your exciting journey to master all three levels of product technical knowledge.",
+        "alt": "Mimecast",
+        "logo": "https://www.mimecast.com/globalassets/global/2019/logo-dark-2020.png",
+        "bgimage":"https://www.mimecast.com/globalassets/global/2020/education/mcpp-level-3-commander-icon.jpg",
+        "url": "https://www.mimecast.com/customer-success/education/certifications/",
+        "hidden": "No",
+        "type": ["Certification"],
+        "category": ["Monitoring and Administration", "IT Security"],
+        "other":[3]
+
+    },
+
+    {	
+        "name": "ITIL® Foundation Certification",
+        "area": "IT",
+        "company": "Axelos",
+        "description": "The ITIL Certification Scheme provides a modular approach to the ITIL framework, and is comprised of a series of qualifications focused on different aspects of IT and digital transformation.",
+        "alt": "Axelos - ITIL®",
+        "logo": "https://www.axelos.com/SiteImages/General/ProductLogos/axelos-large.png",
+        "bgimage":"",
+        "url": "https://www.axelos.com/certifications/itil-certifications/itil-foundation",
+        "hidden": "No",
+        "type": ["Certification"],
+        "category": ["Monitoring and Administration", "Computer Science"],
+        "other":[3]  
+    },
+    {   
+        "name": "Microsoft Azure Fundamentals",
+        "area": "IT",
+        "company": "Microsoft",
+        "description": "This certification is intended for candidates who are just beginning to work with cloud-based solutions and services or are new to Azure.",
+        "alt": "image",
+        "logo": "https://docs.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg",
+        "bgimage":"",
+        "url": "https://docs.microsoft.com/en-us/learn/certifications/azure-fundamentals/",
+        "hidden": "No",
+        "type": ["Certification"],
+        "category": ["Cloud", "Azure"],
+        "other":[3]
+
+    },
+    {   
+        "name": "Cisco Certified Technician (CCT)",
+        "area": "IT",
+        "company": "Cisco",
+        "description": "Cisco Certified Technicians have the skills to diagnose, restore, repair, and replace critical Cisco networking and system devices at customer sites. Technicians work closely with the Cisco Technical Assistance Center (TAC) to quickly and efficiently resolve support incidents.",
+        "alt": "image",
+        "logo": "https://1000logos.net/wp-content/uploads/2016/11/Cisco-logo.png",
+        "bgimage":"",
+        "url": "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/entry/technician-cct.html",
+        "hidden": "No",
+        "type": ["Certification"],
+        "category": ["Networking"],
+        "other":[3]
+
+    },
+    {	
+        "name": "Sophos Certified",
+        "area": "IT",
+        "company": "Sophos",
+        "description": "If you’re a Sophos customer, we want to make sure you get the best from your investment. Our Sophos Administrator courses are designed to do just that. Ask your Sophos Partner how to buy a course and you’ll be on the way to sharpening your product know-how while simplifying your job as an administrator.",
+        "alt": "Sophos",
+        "logo": "https://interworks.com/wp-content/uploads/2017/09/Sophos-ATC-LogoSQ.png",
+        "bgimage":"https://www.sophos.com/en-us/medialibrary/PDFs/partners/sophos-partner-certification-path-deskaid-na.pdf",
+        "url": "https://www.sophos.com/en-us/company/training.aspx",
+        "hidden": "No",
+        "type": ["Certification"],
+        "category": ["Monitoring and Administration", "IT Security"],
+        "other":[3,"multipe"]  
+    },
+    {	
+        "name": "Fluke - Electrical Measurement Safety",
+        "area": "IT",
+        "company": "Fluke",
+        "description": "This free, self-paced, online course describes the electrical dangers you may face in the workplace, the safety standards to protect you and the best practices involved with test tool safety.",
+        "alt": "Fluke",
+        "logo": "https://processmeasurementco.com/wp-content/uploads/FLUKE-logo-300x93.jpg",
+        "bgimage":"",
+        "url": "https://www.fluke.com/en-au/learn/online-courses/electrical-measurement-safety",
+        "hidden": "No",
+        "type": ["Certification"],
+        "category": ["Other"],
+        "other":[3, "ad"]  
+    },
+    {	
+        "name": "Fluke - Insulation Resistance",
+        "area": "IT",
+        "company": "Fluke",
+        "description": "Insulation resistance testing puts a qualitative value on the condition of conductor insulation and the internal insulation of different pieces of electrical equipment.",
+        "alt": "Fluke",
+        "logo": "https://processmeasurementco.com/wp-content/uploads/FLUKE-logo-300x93.jpg",
+        "bgimage":"",
+        "url": "https://www.fluke.com/en-au/learn/online-courses/insulation-resistance-online-course",
+        "hidden": "No",
+        "type": ["Certification"],
+        "category": ["Other"],
+        "other":[3]  
+    },
+    {	
+        "name": "New Relic Fundamentals Certification Program",
+        "area": "IT",
+        "company": "New Relic",
+        "description": "The New Relic Fundamentals Certification Program is made up of three components designed to take you through the basics you need to know to manage your applications and services.",
+        "alt": "New Relic",
+        "logo": "https://cc.sj-cdn.net/instructor/1h7ahmdd447dx-new-relic/themes/3c4jawy1asa1h/header-logo.1595599299.png",
+        "bgimage":"https://cc.sj-cdn.net/instructor/1h7ahmdd447dx-new-relic/courses/2f23962hospjm/promo-image.1572990285.png",
+        "url": "https://learn.newrelic.com/series/fundamentals/new-relic-fundamentals-certification-program-overview",
+        "hidden": "No",
+        "type": ["Certification"],
+        "category": ["Monitoring and Administration"],
+        "other":[3,"multiple"]  
+    },
+    {	
+        "name": "Atlassian Cloud 101",
+        "area": "IT",
+        "company": "Atlassian",
+        "description": "Learn about the basics of Atlassian products like Jira and Confluence Cloud. Jira is a software development tool used by agile teams to Plan, Track and Release great software as well as monitor and improve team performance based on real-time visual data. Confluence Cloud is a remote-friendly team workspace where you can build, organize and collaborate on work in one place from virtually anywhere.",
+        "alt": "Atlassian - Jira",
+        "logo": "https://wac-cdn-2.atlassian.com/image/upload/f_auto,q_auto/dam/jcr:616e6748-ad8c-48d9-ae93-e49019ed5259/Atlassian-horizontal-blue-rgb.svg?cdnVersion=1549",
+        "bgimage":"",
+        "url": "https://training.atlassian.com/free-training-catalog",
+        "hidden": "No",
+        "type": ["Certification"],
+        "category": ["Application", "Project Management"],
+        "other":[3]  
+    },
+    {	
+        "name": "Certified Technology Expert Level 1 - Pexip Infinity Fundamentals Program",
+        "area": "IT",
+        "company": "Pexip",
+        "description": "Bring people and teams together with a single, high-powered video meeting platform to amplify your company communications.",
+        "alt": "Pexip",
+        "logo": "https://www.pexip.com/hubfs/Pexip%20Logo%20Blue%20RGB.png",
+        "bgimage":"",
+        "url": "https://www.pexipacademy.com/",
+        "hidden": "No",
+        "type": ["Certification"],
+        "category": ["Networking"],
+        "other":[3, "ad"]  
+    },
+    {	
+        "name": "PRINCE2® Project Management Certifications",
+        "area": "IT",
+        "company": "Axelos",
+        "description": "PRINCE2 is an easy to learn and flexible method that can be adapted to all types of project. The PRINCE2 certification scheme places a new emphasis on tailoring the method to the needs of organizations and project management environments",
+        "alt": "Axelos - ITIL®",
+        "logo": "https://www.axelos.com/SiteImages/General/ProductLogos/axelos-large.png",
+        "bgimage":"",
+        "url": "https://www.axelos.com/certifications/prince2",
+        "hidden": "No",
+        "type": ["Certification"],
+        "category": ["Project Management"],
+        "other":[3]  
+    },
+    {	
+        "name": "IEEE",
+        "area": "IT",
+        "company": "Institute of Electrical and Electronics Engineers",
+        "description": "The world's largest technical professional organization for the advancement of technology",
+        "alt": "IEEE",
+        "logo": "https://www.ieee.org/content/dam/ieee-org/ieee/web/org/globals/88857-22.gif",
+        "bgimage":"",
+        "url": "https://www.ieee.org/",
+        "hidden": "No",
+        "type": ["Organisation"],
+        "category": ["Other","Computer Science"],
+        "other":[3]  
+    },
+    {	
+        "name": "ISO",
+        "area": "IT",
+        "company": "International Organization for Standardization",
+        "description": "We're ISO, the International Organization for Standardization. We develop and publish International Standards.",
+        "alt": "ISO",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/ISO_Logo_%28Red_square%29.svg/220px-ISO_Logo_%28Red_square%29.svg.png",
+        "bgimage":"",
+        "url": "https://www.iso.org/home.html",
+        "hidden": "No",
+        "type": ["Organisation"],
+        "category": ["Other","Computer Science"],
+        "other":[3]  
+    },
+    {	
+        "name": "Juniper Networks Certification Program (JNCP)",
+        "area": "IT",
+        "company": "Juniper Networks",
+        "description": "The Juniper Networks Certification Program (JNCP) is a multi-tiered program of written and hands-on Lab exams. Our mission is to validate the Juniper skill set among the world's leading networking professionals.",
+        "alt": "Juniper Networks",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Juniper_Networks_logo.svg/1200px-Juniper_Networks_logo.svg.png",
+        "bgimage":"",
+        "url": "https://www.juniper.net/us/en/training/certification/",
+        "hidden": "No",
+        "type": ["Certification"],
+        "category": ["Networking"],
+        "other":[3, "multiple"]  
+    },
+    {	
+        "name": "Citrix",
+        "area": "IT",
+        "company": "Citrix",
+        "description": "Over 400,000 organizations rely on Citrix.After three decades as an industry pioneer, we’ve learned a few lessons. Like what it really takes to bridge the gap between employee productivity and innovative thinking. And how a new generation of technologies can help people quiet the noise and focus on the work that matters most. That’s why we’re committed to delivering intelligent, unified workspaces that allow individuals to take control of their work days—and empower organizations to achieve more.",
+        "alt": "Citrix",
+        "logo": "https://www.citrix.com/content/dam/citrix61/en_us/images/logos/citrix/citrix-logo-black.png",
+        "bgimage":"",
+        "url": "https://training.citrix.com/learning/training/get-started",
+        "hidden": "No",
+        "type": ["Certification"],
+        "category": ["Servers  and Workstations", "Application"],
+        "other":[3, "Multiple"]  
+    },
+    {	
+        "name": "Dell/EMC",
+        "area": "IT",
+        "company": "Dell",
+        "description": "Leverage the Dell Technologies Proven Professional program to realize your full potential. A combination of technology-focused and role-based training and exams to cover concepts and principles as well as the full range of Dell Technologies' hardware, software and solutions",
+        "alt": "Dell/EMC",
+        "logo": "https://logos-world.net/wp-content/uploads/2020/08/Dell-Logo.png",
+        "bgimage":"",
+        "url": "https://education.dellemc.com/content/emc/en-us/home/certification-overview.html",
+        "hidden": "No",
+        "type": ["Certification"],
+        "category": ["Networking", "Servers  and Workstations", "Cloud", "IT Security", "Computer Science"],
+        "other":[3, "Multiple"]  
+    }
+    ],
+
+
+
+
+    "top":[
+        {
+            "name": "CompTIA IT Fundamentals",
+            "area": "IT",
+            "company": "CompTIA",
+            "description": "CompTIA IT Fundamentals (ITF+) is an introduction to basic IT knowledge and skills that helps professionals decide if a career in IT is right for them. It also helps organizations prepare non-technical teams for digital transformation.",
+            "alt": "image",
+            "logo": "",
+            "bgimage":"https://comptiawebsite.blob.core.windows.net/webcontent/images/default-source/siteicons/logoitfundamentals.svg?sfvrsn=ce3ee1ff_2",
+            "url": "https://www.comptia.org/certifications/it-fundamentals",
+            "hidden": "No",
+            "type": ["Certification", "Fundamentals"],
+            "category": ["IT Fundamentals"],
+            "other":[3]
+        },
+        {
+            "name": "Microsoft Azure Fundamentals",
+            "area": "IT",
+            "company": "Microsoft",
+            "description": "This certification is intended for candidates who are just beginning to work with cloud-based solutions and services or are new to Azure.",
+            "alt": "image",
+            "logo": "",
+            "bgimage":"https://docs.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg",
+            "url": "https://docs.microsoft.com/en-us/learn/certifications/azure-fundamentals/",
+            "hidden": "No",
+            "type": ["Certification"],
+            "category": ["Cloud", "Azure"],
+            "other":[3]
+        },
+        {   
+            "name": "Cisco Certified Technician (CCT)",
+            "area": "IT",
+            "company": "Cisco",
+            "description": "Cisco Certified Technicians have the skills to diagnose, restore, repair, and replace critical Cisco networking and system devices at customer sites. Technicians work closely with the Cisco Technical Assistance Center (TAC) to quickly and efficiently resolve support incidents.",
+            "alt": "image",
+            "logo": "",
+            "bgimage":"https://1000logos.net/wp-content/uploads/2016/11/Cisco-logo.png",
+            "url": "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/entry/technician-cct.html",
+            "hidden": "No",
+            "type": ["Certification"],
+            "category": ["Networking"],
+            "other":[3]
+    
+        }
+    ],
+
+    "carousel":[
+        
+    ]
+}

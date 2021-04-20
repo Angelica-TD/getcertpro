@@ -1,0 +1,26 @@
+<% layout('layouts/boilerplate')%>
+	<div class="container">
+		<h2><%= cat %></h2>
+			
+		<div class="d-flex my-wrap flex-row mb-3 justify-content-start mt-5 custom">
+			<%- include('partials/ads') %>
+			<%for(let item in categorized){%>
+				<div class="col-lg-4 p-4">
+					<a href="<%= categorized[item].url %>" target="_blank" class="link clickCount">
+						<%if(categorized[item].logo){%>
+							<img src="<%= categorized[item].logo %>" class="img-fluid custom-img mx-auto d-block" alt="<%= categorized[item].alt %>">
+						<%}else{%>
+							<div class="custom-img">
+								<%= categorized[item].alt %>
+							</div>
+						<%}%>
+						<h3><%=categorized[item].name%></h3>
+						<p><%=categorized[item].description%></p>
+					</a>
+								
+				</div>
+			<%}%>
+		</div>
+
+	</div>
+	
