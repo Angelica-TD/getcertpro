@@ -22,3 +22,14 @@
 /* .certs:hover .certs-menu{
     display: flex;
 } */
+
+.navbar-brand{
+    height: 70px;
+    width: 70px;
+    
+}
+
+.navbar-brand img{
+    height: inherit;
+    width: inherit;
+}

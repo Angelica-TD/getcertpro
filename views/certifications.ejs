@@ -16,7 +16,7 @@
     <div class="d-flex my-wrap flex-row mb-3 justify-content-start mt-5 custom">
         <%if(advertised){%>
             <%for(let item in advertised){%>
-                <div class="col-lg-4 p-4">
+                <div class="col-lg-4 p-4 text-center">
                     <span class="badge rounded-pill bg-danger">Advertised</span>
                     <a href="<%= advertised[item].url %>" target="_blank" class="link clickCount">
                         <%if(advertised[item].logo){%>
@@ -34,7 +34,7 @@
             <%}%>
         <%}%>
         <%for(let item in dataArray){%>
-            <div class="col-lg-4 p-4">
+            <div class="col-lg-4 p-4 text-center">
                 
                 <a href="<%= dataArray[item].url %>" target="_blank" class="link clickCount">
                     <%if(dataArray[item].logo){%>
