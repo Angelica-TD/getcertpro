@@ -11,6 +11,7 @@ const data = require('./public/js/dataArray')
 const advertised = require('./public/js/advertised')
 let description = ""
 const port = 3000
+const pagination = require('./public/js/pagination')
 
 
 //--------SET VIEW ENGINE-------------
@@ -36,12 +37,15 @@ app.get('/', (req, res)=>{
 //=======================================================
 //when user clicks certifications in navbar renders all certs (certifications.ejs)
 //shuffled results
-app.get('/allcertifications/:page', (req, res)=>{
+app.get('/allcertifications', (req, res)=>{
+	let {page}= req.query
 	let title = "All Certifications - Cert Guru"
 	let dataArray = new shuffle(data).shuffle()
 	//render all certs
+	let paged = pagination(dataArray, advertised.length)
 	description = `All certifications`
-	res.render('certifications', {dataArray, noDupes, title, description, advertised})
+	res.render('certifications', {paged, noDupes, title, description, advertised})
+	
 })
 //==================================================================
 //when user hovers over certifications in navbar

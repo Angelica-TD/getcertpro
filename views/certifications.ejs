@@ -35,25 +35,31 @@
                 </div>
             <%}%>
         <%}%>
-        <%for(let item in dataArray){%>
+        <%for(let item in paged){%>
             <div class="col-lg-4 p-4 text-center">
                 
-                <a href="<%= dataArray[item].url %>" target="_blank" class="link clickCount">
-                    <%if(dataArray[item].logo){%>
-                        <img src="<%= dataArray[item].logo %>" class="img-fluid custom-img mx-auto d-block" alt="<%= dataArray[item].alt %>">
+                <a href="<%= paged[item].url %>" target="_blank" class="link clickCount">
+                    <%if(paged[item].logo){%>
+                        <img src="<%= paged[item].logo %>" class="img-fluid custom-img mx-auto d-block" alt="<%= paged[item].alt %>">
                     <%}else{%>
                         <div class="custom-img">
-                            <%= dataArray[item].alt %>
+                            <%= paged[item].alt %>
                         </div>
                     <%}%>
-                    <h3><%=dataArray[item].name%></h3>
-                    <p><%=dataArray[item].description%></p>
+                    <h3><%=paged[item].name%></h3>
+                    <p><%=paged[item].description%></p>
                 </a>
                             
             </div>
         <%}%>
     </div>
-
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item"><a class="page-link" href="allcertifications?page=1">1</a></li>
+          <li class="page-item"><a class="page-link" href="allcertifications?page=2">2</a></li>
+          <li class="page-item"><a class="page-link" href="allcertifications?page=3">3</a></li>
+        </ul>
+      </nav>
 
 </div>
 		<!-- END MIDDLE COLUMN CONTENT -->
