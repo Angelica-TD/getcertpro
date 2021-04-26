@@ -36,7 +36,7 @@ app.get('/', (req, res)=>{
 //=======================================================
 //when user clicks certifications in navbar renders all certs (certifications.ejs)
 //shuffled results
-app.get('/allcertifications', (req, res)=>{
+app.get('/allcertifications/:page', (req, res)=>{
 	let title = "All Certifications - Cert Guru"
 	let dataArray = new shuffle(data).shuffle()
 	//render all certs
