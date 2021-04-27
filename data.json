@@ -226,7 +226,7 @@
         "url": "https://training.citrix.com/learning/training/get-started",
         "hidden": "No",
         "type": ["Certification"],
-        "category": ["Servers  and Workstations", "Application"],
+        "category": ["Servers and Workstations", "Application"],
         "other":[3, "Multiple"]  
     },
     {	
@@ -240,7 +240,7 @@
         "url": "https://education.dellemc.com/content/emc/en-us/home/certification-overview.html",
         "hidden": "No",
         "type": ["Certification"],
-        "category": ["Networking", "Servers  and Workstations", "Cloud", "IT Security", "Computer Science"],
+        "category": ["Networking", "Servers and Workstations", "Cloud", "IT Security", "Computer Science"],
         "other":[3, "Multiple"]  
     },
     {	
@@ -254,7 +254,7 @@
         "url": "https://certification-learning.hpe.com/ext/certifications",
         "hidden": "No",
         "type": ["Certification"],
-        "category": ["Networking", "Servers  and Workstations", "Cloud", "IT Security", "Cloud"],
+        "category": ["Networking", "Servers and Workstations", "Cloud", "IT Security", "Cloud"],
         "other":[3, "Multiple"]  
     },
 	{	
@@ -291,7 +291,7 @@
         "company": "Saint-Gobain",
         "description": "Sign up for industry leading training from a world leader in abrasives manufacturing. Registering today gives you access to our Introductory courses.",
         "alt": "Saint-Gobain",
-        "logo": "https://www.nortonabrasives.com/sites/sga.na.com/modules/sga/contrib/copyprevention/transparent.gif",
+        "logo": "/images/norton_logo.png",
         "bgimage":"",
         "url": "https://www.nortonabrasives.com/en-us/norton-tech",
         "hidden": "Yes",
@@ -305,12 +305,12 @@
         "company": "Veritas",
         "description": "Always Available. Always Protected. Always Optimizing. Access Data Instantly. Single Platform. Cloud Storage. Experience Data Agility. Optimize Storage. Instant Recovery. Services: Backup & Recovery, Copy Data Management, Information Governance.",
         "alt": "Veritas",
-        "logo": "",
+        "logo": "/images/veritas.png",
         "bgimage":"",
         "url": "https://www.veritas.com/services/education-services/certification",
         "hidden": "No",
         "type": ["Certification"],
-        "category": ["Securty", "Multiple"],
+        "category": ["Security", "Multiple"],
         "other":[3]  
     },
 	{	
@@ -319,7 +319,7 @@
         "company": "Red Hat",
         "description": "From Linux® training to DevOps certification, we have a hands-on training and practical certification path to fit your business goals.",
         "alt": "Red Hat",
-        "logo": "https://www.redhat.com/en",
+        "logo": "/images/redhat.png",
         "bgimage":"",
         "url": "https://www.redhat.com/en/services/training-and-certification",
         "hidden": "No",
@@ -333,7 +333,7 @@
         "company": "EC-Council",
         "description": "Certified Ethical Hacker CEH v11 will teach you the latest commercial-grade hacking tools, techniques, and methodologies used by hackers and information security professionals to lawfully hack an organization.",
         "alt": "EC-Council",
-        "logo": "https://www.eccouncil.org/wp-content/uploads/2016/07/ec-council-logo.png",
+        "logo": "/images/ec.svg",
         "bgimage":"",
         "url": "https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/",
         "hidden": "No",
@@ -352,7 +352,7 @@
         "url": "https://www.splunk.com/en_us/training.html",
         "hidden": "No",
         "type": ["Certification"],
-        "category": ["Servers  and Workstations", "Application", "Monitoring and Administration"],
+        "category": ["Servers and Workstations", "Application", "Monitoring and Administration"],
         "other":[3]  
     },
 	{	
@@ -366,7 +366,7 @@
         "url": "https://www.oracle.com/au/education/",
         "hidden": "No",
         "type": ["Certification"],
-        "category": ["Servers  and Workstations", "Application", "Databases"],
+        "category": ["Servers and Workstations", "Application", "Databases"],
         "other":[3, "Multiple"]  
     },
 	{	
@@ -380,7 +380,7 @@
         "url": "https://aws.amazon.com/training/",
         "hidden": "No",
         "type": ["Certification"],
-        "category": ["Servers  and Workstations", "Application", "Databases"],
+        "category": ["Servers and Workstations", "Application", "Databases"],
         "other":[3, "Multiple"]  
     }
     ],
