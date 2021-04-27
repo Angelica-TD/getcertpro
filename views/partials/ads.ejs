@@ -1,7 +1,7 @@
 <%if(advertised){%>
     <%for(let item in advertised){%>
         <%if(advertised[item].category.includes(cat)){%>
-        <div class="col-lg-4 p-4">
+        <div class="col-lg-4 p-4 text-center">
             <span class="badge rounded-pill bg-danger">Advertised</span>
             <a href="<%= advertised[item].url %>" target="_blank" class="link">
                 <%if(advertised[item].logo){%>

@@ -32,32 +32,36 @@ a{
 /* Carousel base class */
 .carousel {
 	margin-bottom: 4rem;
-  }
+}
   /* Since positioning the image, we need to help out the caption */
-  .carousel-caption {
+.carousel-caption {
 	bottom: 3rem;
 	z-index: 10;
-  }
+}
   
   /* Declare heights because of positioning of img element */
-  .carousel-item {
+.carousel-item {
 	height: 32rem;
-  }
-  .carousel-item > img {
+}
+.carousel-item > img {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
 	opacity: .9;
 	object-fit: fill;
 	/* object-position: 0% -50%; */
-  }
+}
 
   /* Center align the text within the three columns below the carousel */
 .top-certs .col-lg-4 {
 	margin-bottom: 1.5rem;
 	text-align: center;
-  }
+}
 
-  .card{
+.card{
 	  margin: 0 auto;
-  }
+}
+
+.next, .previous{
+	width: 25%;
+}

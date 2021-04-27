@@ -45,6 +45,7 @@ app.get('/allcertifications', (req, res)=>{
 	let paged = pagination(dataArray, advertised.length, queryPage)
 	description = `All certifications`
 	queryPage +=1
+	// res.send(paged)
 	res.render('certifications', {paged, noDupes, title, description, advertised, queryPage})
 	
 })
