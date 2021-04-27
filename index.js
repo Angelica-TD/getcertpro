@@ -12,7 +12,7 @@ const advertised = require('./public/js/advertised')
 let description = ""
 const port = 3000
 const pagination = require('./public/js/pagination')
-
+let dataArray = new shuffle(data).shuffle()
 
 //--------SET VIEW ENGINE-------------
 app.engine('ejs', ejsMate)
@@ -31,6 +31,7 @@ app.use(express.json())
 //home page route
 app.get('/', (req, res)=>{
 	let title = "Cert Guru"
+	dataArray = new shuffle(data).shuffle()
 	description = "Cert Guru lists all helpful certifications for all levels beginner to expert and all price ranges from free certifications onward. Includes certifications from Microsoft, Cisco, Axelos, Mimecast, Sophos, Atlassian, New Relic, and much more."
 	res.render("index", {...contentData, noDupes, title, description})
 })
@@ -38,13 +39,13 @@ app.get('/', (req, res)=>{
 //when user clicks certifications in navbar renders all certs (certifications.ejs)
 //shuffled results
 app.get('/allcertifications', (req, res)=>{
-	let {page}= req.query
+	let queryPage = parseInt(req.query.page)
 	let title = "All Certifications - Cert Guru"
-	let dataArray = new shuffle(data).shuffle()
 	//render all certs
-	let paged = pagination(dataArray, advertised.length)
+	let paged = pagination(dataArray, advertised.length, queryPage)
 	description = `All certifications`
-	res.render('certifications', {paged, noDupes, title, description, advertised})
+	queryPage +=1
+	res.render('certifications', {paged, noDupes, title, description, advertised, queryPage})
 	
 })
 //==================================================================

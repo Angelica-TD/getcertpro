@@ -4,7 +4,7 @@
 			<button class="dropbtn">Filter by Category</button>
 			<div class="dropdown-content">
 			  <input type="text" placeholder="Search.." id="filter-input">
-				<a href="/allcertifications">All</a>
+				<a href="/allcertifications?page=1">All</a>
 				<%for(let item in noDupes){%>
 				<a href="/categories/<%= noDupes[item] %>"><%= noDupes[item] %></a>
 				<%}%>
