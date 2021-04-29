@@ -1,45 +1,16 @@
-<nav class="py-4 navbar-light bg-light navbar-expand-lg navbar">
-	<div class="container">
-		<a href="/" class="me-0 navbar-brand">
-			<img src="../images/logo.png" alt="">
-		</a>
-		<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		
-		<div class="collapse navbar-collapse" id="navbarNav">
-			<div class="navbar-nav">
-				<a href="/" class="link me-4 nav-item">
-				<div>Home</div>
-				</a>
-				
-				<div class="certs me-4">
-					<a href="/allcertifications?page=1" class="link dropdown-hover nav-item">
-						Certifications
-					</a>
-					<div class="dropdown-container py-3">
-						<div class="my-container my-wrap container">
-							<%for(let item in noDupes){%>
-											
-								<div>
-									<a class="col-4 link me-4" href="/categories/<%= noDupes[item] %>">
-											
-										<%= noDupes[item] %>
-									</a>	
-								</div>
-								
-							<%}%>
-						</div>
-					
-					</div>
-				</div><!-- </certs> -->
-				<a href="/contact" class="link nav-item">
-					<div>Contact us</div>
-				</a>
-			</div><!-- </navbar-nav> -->
-		</div><!-- </collapse> -->
-	</div><!-- </container> -->
-	
-
-</nav>
+<div class="d-flex justify-content-center container-fluid navbar-dark bg-dark sticky-top">
+	<nav class="navbar  navbar-expand-lg">
+	  <a class="navbar-brand" href="/">Cert Guru</a>
+	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	  </button>
+	  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+		<div class="navbar-nav">
+		  <a class="nav-link" aria-current="page" href="/">Home</a>
+		  <a class="nav-link" href="/allcertifications?page=1">Certifications</a>
+		  <!-- <a class="nav-link" href="#">Contact</a> -->
+		</div>
+	  </div>
+	</nav>
+</div>
 <script type="text/javascript" src="/js/navHover.js"></script>

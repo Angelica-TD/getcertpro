@@ -3,6 +3,7 @@ module.exports = function paginate(data, advertised, currentPage){
     let start = (currentPage-1) * (limit-advertised)//0-6-12
     let end = currentPage * (limit-advertised)//6-12-18
     const results = {}
+    results.fullLength = data.length
     results.next = {
         page: currentPage + 1,
         visible: true

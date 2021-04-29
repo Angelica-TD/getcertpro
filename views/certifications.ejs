@@ -1,55 +1,98 @@
 <% layout('layouts/boilerplate')%>
 <!-- START COLUMNS CONTAINER FOR CONTENT -->
-<div class="container">
+<div class="container mb-3">
+    <h1>All Certificates</h1>
+    <h3><%=paged.fullLength%> results</h3>
     
-    <!-- FILTER BUTTON -->
-    <div class="dropdown">
-        <button class="dropbtn">Filter by Category</button>
-        <div class="dropdown-content">
-          <input type="text" placeholder="Search.." id="filter-input">
-            <a href="/allcertifications?page=1">All</a>
-            <%for(let item in noDupes){%>
-            <a href="/categories/<%= noDupes[item] %>"><%= noDupes[item] %></a>
-            <%}%>
-        </div>
-    </div>
-    <!-- END FILTER BUTTON -->
     <!-- START MIDDLE COLUMN CONTENT -->
-    <div class="d-flex my-wrap flex-row mb-3 justify-content-start mt-5 custom">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
         <%if(advertised){%>
             <%for(let item in advertised){%>
-                <div class="col-lg-4 p-4 text-center">
-                    <span class="badge rounded-pill bg-danger">Advertised</span>
-                    <a href="<%= advertised[item].url %>" target="_blank" class="link clickCount">
-                        <%if(advertised[item].logo){%>
-                            <img src="<%= advertised[item].logo %>" class="img-fluid custom-img mx-auto d-block" alt="<%= advertised[item].alt %>">
-                        <%}else{%>
-                            <div class="custom-img">
-                                <%= advertised[item].alt %>
+                <div class="col">
+                    <div class="card h-100 p-2 shadow-sm">
+                        <span class="badge rounded-pill bg-danger">Advertised</span>
+                        <img src="<%=advertised[item].logo%>" alt="<%=advertised[item].alt%>" class="img-fluid custom-img mx-auto d-block card-img-top">
+                        <div class="card-body">
+                            <h3 class="card-title" style="height: 100px;">
+                            <%=advertised[item].name%>
+                            </h3>
+                            <div class="text-muted">Type: 
+                                <%=advertised[item].type%>
                             </div>
-                        <%}%>
-                        <h3><%=advertised[item].name%></h3>
-                        <p><%=advertised[item].description%></p>
-                    </a>
-                                
+                            <div class="text-muted">Category: 
+                                <%=advertised[item].category%>
+                            </div>
+                            
+                        </div>
+                        <div class="card-footer text-center border-0">
+                            <button type="button" class="w-100 btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#<%=advertised[item].abbr%>">Details</button>
+                        </div>
+                        
+                    </div>
+
+                    <!-- Modal -->
+                    <div class="modal fade" id="<%=advertised[item].abbr%>" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="detailModalLabel"><%=advertised[item].name%></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <%=advertised[item].description%>
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <a href="<%=advertised[item].url%>" target="_blank" class="btn btn-sm btn-success">Go to website</a>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
                 </div>
             <%}%>
         <%}%>
-        <%for(let item of paged.results){%>
-            <div class="col-lg-4 p-4 text-center">
+        <%for(let cert of paged.results){%>
+            <div class="col">
                 
-                <a href="<%= item.url %>" target="_blank" class="link clickCount">
-                    <%if(item.logo){%>
-                        <img src="<%= item.logo %>" class="img-fluid custom-img mx-auto d-block" alt="<%= item.alt %>">
-                    <%}else{%>
-                        <div class="custom-img">
-                            <%= item.alt %>
+                <div class="card h-100 p-2 shadow-sm">
+                    <img src="<%=cert.logo%>" alt="<%=cert.alt%>" class="img-fluid custom-img mx-auto d-block card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title" style="height: 100px;">
+                        <%=cert.name%>
+                        </h3>
+                        <div class="text-muted">Type: 
+                            <%=cert.type%>
                         </div>
-                    <%}%>
-                    <h3><%=item.name%></h3>
-                    <p><%=item.description%></p>
-                </a>
-                            
+                        <div class="text-muted">Category: 
+                            <%for (let item in cert.category){%>
+                                <a href="/certs/filter/<%=cert.category[item]%>" class="link-success"><%=cert.category[item]%></a>
+                            <%}%>
+                        </div>
+                        <!-- <%=cert._id%> -->
+                    </div>
+                    <div class="card-footer text-center border-0">
+                        <button type="button" class="w-100 btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#<%=cert.abbr%>">Details</button>
+                    </div>
+                    
+                </div>
+                <!-- Modal -->
+                <div class="modal fade" id="<%=cert.abbr%>" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="detailModalLabel"><%=cert.name%></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <%=cert.description%>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="<%=cert.url%>" target="_blank" class="btn btn-sm btn-success">Go to website</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>  
             </div>
         <%}%>
     </div>
