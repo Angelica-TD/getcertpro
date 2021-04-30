@@ -1,0 +1,19 @@
+
+<nav aria-label="Content navigation">
+    <ul class="justify-content-center text-center pagination pagination-lg my-5">
+        <%if(paged.previous.visible===true){%>
+        <li class="page-item previous">
+            <a class="page-link" href="<%= cat %>?page=<%=paged.previous.page%>" aria-label="Previous">
+                <!-- <span aria-hidden="true">&laquo;</span> -->Previous Page
+            </a>
+        </li>
+        <%}%>
+        <%if(paged.next.visible===true){%>
+        <li class="page-item next">
+            <a class="page-link" href="<%= cat %>?page=<%=paged.next.page%>" aria-label="Next">
+                <!-- <span aria-hidden="true">&raquo;</span> -->Next Page
+            </a>
+        </li>
+        <%}%>
+    </ul>
+</nav>

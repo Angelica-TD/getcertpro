@@ -3,7 +3,7 @@
         <%if(advertised[item].category.includes(cat)){%>
             <div class="col">
                 <div class="card h-100 p-2 shadow-sm">
-                    <span class="badge rounded-pill bg-danger w-50 mx-auto">Advertised</span>
+                    <span class="badge rounded-pill bg-danger w-25">Advertised</span>
                     <img src="<%=advertised[item].logo%>" alt="<%=advertised[item].alt%>" class="img-fluid custom-img mx-auto d-block card-img-top">
                     <div class="card-body">
                         <h3 class="card-title" style="height: 100px;">
@@ -13,12 +13,12 @@
                             <%=advertised[item].type%>
                         </div>
                         <div class="text-muted">Category: 
-                            <a href="/categories/<%=advertised[item].category%>?page=1" class="link-success"><%=advertised[item].category%></a>
+                            <a href="/categories/<%=advertised[item].category%>?page=1" class="rounded-pill btn btn-sm btn-light mb-2"><%=advertised[item].category%></a>
                         </div>
                         
                     </div>
-                    <div class="card-footer text-center border-0">
-                        <button type="button" class="w-100 btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#<%=advertised[item].abbr%>">Details</button>
+                    <div class="card-footer text-center border-0 p-0">
+                        <button type="button" class="w-100 btn btn-sm btn-outline-secondary p-2" data-bs-toggle="modal" data-bs-target="#<%=advertised[item].abbr%>">Details</button>
                     </div>
                     
                 </div>

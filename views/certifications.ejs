@@ -1,20 +1,31 @@
 <% layout('layouts/boilerplate')%>
 <!-- START COLUMNS CONTAINER FOR CONTENT -->
 <div class="container mb-3">
-    <h1>All Certificates</h1>
-    <h3><%=paged.noAdLength%> results</h3>
-    <h3><%=paged.next.current%> out of <%=paged.next.count%> pages</h3>
-    Categories:
-    <%for(let item in noDupes){%>
-        <a href="/categories/<%=noDupes[item]%>?page=1" class="link-success"><%=noDupes[item]%></a>
-    <%}%>
+    <h2>All Certifications</h2>
+    <hr>
+    <nav aria-label="breadcrumb">
+        <ol class="breadcrumb mt-3">
+            <li class="breadcrumb-item"><a href="/" class="btn btn-sm btn-outline-secondary">Home</a></li>
+            <li class="breadcrumb-item active" aria-current="page">
+                <button class="breadcrumb-item btn btn-sm btn-light" disabled>All Certifications</button>
+            </li>
+        </ol>
+    </nav>
+    <h4><%=paged.noAdLength%> results</h4>
+    <h4><%=paged.next.current%> out of <%=paged.next.count%> pages</h4>
+    <div>
+        Categories:
+        <%for(let item in noDupes){%>
+            <a href="/categories/<%=noDupes[item]%>?page=1" class="rounded-pill btn btn-sm btn-light mb-2"><%=noDupes[item]%></a>
+        <%}%>
+    </div>
     <!-- START MIDDLE COLUMN CONTENT -->
     <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
         <%if(advertised){%>
             <%for(let item in advertised){%>
                 <div class="col">
                     <div class="card h-100 p-2 shadow-sm">
-                        <span class="badge rounded-pill bg-danger w-50 mx-auto">Advertised</span>
+                        <span class="badge rounded-pill bg-danger w-25">Advertised</span>
                         <img src="<%=advertised[item].logo%>" alt="<%=advertised[item].alt%>" class="img-fluid custom-img mx-auto d-block card-img-top">
                         <div class="card-body">
                             <h3 class="card-title" style="height: 100px;">
@@ -24,12 +35,12 @@
                                 <%=advertised[item].type%>
                             </div>
                             <div class="text-muted">Category: 
-                                <a href="/categories/<%=advertised[item].category%>?page=1" class="link-success"><%=advertised[item].category%></a>
+                                <a href="/categories/<%=advertised[item].category%>?page=1" class="rounded-pill btn btn-sm btn-light mb-2"><%=advertised[item].category%></a>
                             </div>
                             
                         </div>
-                        <div class="card-footer text-center border-0">
-                            <button type="button" class="w-100 btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#<%=advertised[item].abbr%>">Details</button>
+                        <div class="card-footer text-center border-0 p-0">
+                            <button type="button" class="w-100 btn btn-sm btn-outline-secondary p-2" data-bs-toggle="modal" data-bs-target="#<%=advertised[item].abbr%>">Details</button>
                         </div>
                         
                     </div>
@@ -69,13 +80,13 @@
                         </div>
                         <div class="text-muted">Category: 
                             <%for (let item in cert.category){%>
-                                <a href="/categories/<%=cert.category[item]%>?page=1" class="link-success"><%=cert.category[item]%></a>
+                                <a href="/categories/<%=cert.category[item]%>?page=1" class="rounded-pill btn btn-sm btn-light mb-2"><%=cert.category[item]%></a>
                             <%}%>
                         </div>
                         <!-- <%=cert._id%> -->
                     </div>
-                    <div class="card-footer text-center border-0">
-                        <button type="button" class="w-100 btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#<%=cert.abbr%>">Details</button>
+                    <div class="card-footer text-center border-0 p-0">
+                        <button type="button" class="w-100 btn btn-sm btn-outline-secondary p-2" data-bs-toggle="modal" data-bs-target="#<%=cert.abbr%>">Details</button>
                     </div>
                     
                 </div>
@@ -104,14 +115,14 @@
         <ul class="justify-content-center text-center pagination pagination-lg my-5">
             <%if(paged.previous.visible===true){%>
             <li class="page-item previous">
-                <a class="page-link" href="allcertifications?page=<%=paged.previous.page%>" aria-label="Previous">
+                <a class="page-link btn btn-sm btn-light" href="allcertifications?page=<%=paged.previous.page%>" aria-label="Previous">
                     <!-- <span aria-hidden="true">&laquo;</span> -->Previous Page
                 </a>
             </li>
             <%}%>
             <%if(paged.next.visible===true){%>
             <li class="page-item next">
-                <a class="page-link" href="allcertifications?page=<%=paged.next.page%>" aria-label="Next">
+                <a class="page-link btn btn-sm btn-light" href="allcertifications?page=<%=paged.next.page%>" aria-label="Next">
                     <!-- <span aria-hidden="true">&raquo;</span> -->Next Page
                 </a>
             </li>

@@ -30,7 +30,7 @@ app.use(express.json())
 //--------ROUTES--------------------
 //home page route
 app.get('/', (req, res)=>{
-	let title = "Cert Guru"
+	let title = "GoCertPro"
 	dataArray = new shuffle(data).shuffle()
 	description = "Cert Guru lists all helpful certifications for all levels beginner to expert and all price ranges from free certifications onward. Includes certifications from Microsoft, Cisco, Axelos, Mimecast, Sophos, Atlassian, New Relic, and much more."
 	// console.log(noDupes)
@@ -41,7 +41,7 @@ app.get('/', (req, res)=>{
 //shuffled results
 app.get('/allcertifications', (req, res)=>{
 	let queryPage = parseInt(req.query.page)
-	let title = "All Certifications - Cert Guru"
+	let title = "All Certifications - GoCertPro"
 	//render all certs
 	let paged = pagination(dataArray, advertised.length, queryPage)
 	description = `All certifications`
@@ -58,7 +58,7 @@ app.get('/categories/:cat', (req,res)=>{
 	let queryPage = parseInt(req.query.page)
 	let paged
 	const {cat} = req.params
-	let title = `${cat} - CERT GURU`
+	let title = `${cat} - GoCertPro`
 	description =`Find all certifications for ${cat}`
 	if(noDupes.includes(cat)){
 		let categorized =  categorize(cat)
@@ -74,12 +74,12 @@ app.get('/categories/:cat', (req,res)=>{
 })
 
 app.get('/contact', (req,res)=>{
-	let title = `Contact - CERT GURU`
+	let title = `Contact - GoCertPro`
 	res.render('contact', {title, noDupes, description})
 })
 
 app.get('/sitemap', (req,res)=>{
-	let title = `Sitemap - CERT GURU`
+	let title = `Sitemap - GoCertPro`
 	res.render('sitemap', {title, noDupes})
 })
 

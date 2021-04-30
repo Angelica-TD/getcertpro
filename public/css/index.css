@@ -116,7 +116,28 @@ footer, footer li a{
 	height: 100px;
     object-fit: contain;
 }
-
 .my-link{
+    color: #6c757d;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.my-link:hover{
     color: #212529;
+}
+
+.btn-light.disabled, .btn-light:disabled, .btn-light {
+    color: #000;
+    background-color: #e4e4e4;
+    border-color: #f8f9fa;
+}
+
+.page-link{
+    transition: color .30s ease-in-out,background-color .30s ease-in-out,border-color .30s ease-in-out,box-shadow .30s ease-in-out;
+}
+
+
+.page-link:hover {
+    z-index: 2;
+    color: #f9fafb;
+    background-color: #212529;
+    border-color: #dee2e6;
 }

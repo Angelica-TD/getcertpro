@@ -95,7 +95,7 @@
             "abbr": "sophos"
         },
         {	
-            "name": "Fluke - Electrical Measurement Safety",
+            "name": "Fluke - Electrical Measurement Safety Online Course",
             "area": "IT",
             "company": "Fluke",
             "description": "This free, self-paced, online course describes the electrical dangers you may face in the workplace, the safety standards to protect you and the best practices involved with test tool safety.",
@@ -155,14 +155,14 @@
             "abbr": "atlas"
         },
         {	
-            "name": "Certified Technology Expert Level 1 - Pexip Infinity Fundamentals Program",
+            "name": "Pexip Academy Training Programs",
             "area": "IT",
             "company": "Pexip",
             "description": "Bring people and teams together with a single, high-powered video meeting platform to amplify your company communications.",
             "alt": "Pexip",
             "logo": "https://www.pexip.com/hubfs/Pexip%20Logo%20Blue%20RGB.png",
             "bgimage":"",
-            "url": "https://www.pexipacademy.com/",
+            "url": "https://www.pexip.com/training",
             "hidden": "No",
             "type": ["Certification"],
             "category": ["Networking"],
@@ -200,14 +200,14 @@
             "abbr": "ieee"  
         },
         {	
-            "name": "ISO",
+            "name": "ISO Certifications",
             "area": "IT",
             "company": "International Organization for Standardization",
-            "description": "We're ISO, the International Organization for Standardization. We develop and publish International Standards.",
+            "description": "ISO Certification can be a useful tool to add credibility, by demonstrating that your product or service meets the expectations of your customers. For some industries, certification is a legal or contractual requirement.",
             "alt": "ISO",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/ISO_Logo_%28Red_square%29.svg/220px-ISO_Logo_%28Red_square%29.svg.png",
+            "logo": "/images/msclogo.png",
             "bgimage":"",
-            "url": "https://www.iso.org/home.html",
+            "url": "https://mscglobal.com.au/",
             "hidden": "No",
             "type": ["Organisation"],
             "category": ["Other","Computer Science"],

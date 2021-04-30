@@ -1,13 +1,5 @@
 <% layout('layouts/boilerplate')%>
 	<div class="container">
-		<nav aria-label="breadcrumb">
-			<ol class="breadcrumb mt-3">
-			  <li class="breadcrumb-item"><a href="/allcertifications?page=1" class="btn btn-sm btn-outline-secondary">Back to all certificates</a></li>
-			  <li class="breadcrumb-item active" aria-current="page">
-				  <button class="breadcrumb-item btn btn-sm btn-light" disabled><%= cat %></button>
-				</li>
-			</ol>
-		</nav>
 		<!-- <div class="dropdown">
 			<button class="dropbtn">Filter by Category</button>
 			<div class="dropdown-content">
@@ -19,8 +11,18 @@
 			</div>
 		</div> -->
 		<h2><%= cat %></h2>
-        <h3><%=paged.fullLength%> results</h3>
-        <h3><%=paged.next.current%> out of <%=paged.next.count%> pages</h3>
+        <hr>
+        <nav aria-label="breadcrumb">
+			<ol class="breadcrumb mt-3">
+			  <li class="breadcrumb-item"><a href="/" class="btn btn-sm btn-outline-secondary">Home</a></li>
+			  <li class="breadcrumb-item"><a href="/allcertifications?page=1" class="btn btn-sm btn-outline-secondary">All Certifications</a></li>
+			  <li class="breadcrumb-item active" aria-current="page">
+				  <button class="breadcrumb-item btn btn-sm btn-light" disabled><%= cat %></button>
+				</li>
+			</ol>
+		</nav>
+        <h4><%=paged.fullLength%> results</h4>
+        <h4><%=paged.next.current%> out of <%=paged.next.count%> pages</h4>
 		<div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3 mb-5">
 			<%- include('partials/ads') %>
 			<%for(let cert of paged.results){%>
@@ -36,13 +38,13 @@
                             </div>
                             <div class="text-muted">Category: 
 								<%for (let item in cert.category){%>
-                                <a href="/categories/<%=cert.category[item]%>?page=1" class="link-success"><%=cert.category[item]%></a>
+                                <a href="/categories/<%=cert.category[item]%>?page=1" class="rounded-pill btn btn-sm btn-light mb-2"><%=cert.category[item]%></a>
 								<%}%>
                             </div>
                             
                         </div>
-                        <div class="card-footer text-center border-0">
-                            <button type="button" class="w-100 btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#<%=cert.abbr%>">Details</button>
+                        <div class="card-footer text-center border-0 p-0">
+                            <button type="button" class="w-100 btn btn-sm btn-outline-secondary p-2" data-bs-toggle="modal" data-bs-target="#<%=cert.abbr%>">Details</button>
                         </div>
                         
                     </div>
@@ -68,23 +70,6 @@
                 </div>
             <%}%>
 		</div>
-        <nav aria-label="Content navigation">
-            <ul class="justify-content-center text-center pagination pagination-lg my-5">
-                <%if(paged.previous.visible===true){%>
-                <li class="page-item previous">
-                    <a class="page-link" href="<%= cat %>?page=<%=paged.previous.page%>" aria-label="Previous">
-                        <!-- <span aria-hidden="true">&laquo;</span> -->Previous Page
-                    </a>
-                </li>
-                <%}%>
-                <%if(paged.next.visible===true){%>
-                <li class="page-item next">
-                    <a class="page-link" href="<%= cat %>?page=<%=paged.next.page%>" aria-label="Next">
-                        <!-- <span aria-hidden="true">&raquo;</span> -->Next Page
-                    </a>
-                </li>
-                <%}%>
-            </ul>
-        </nav>
+        <%- include('partials/contentnav') %>
 	</div>
 	<script src="/js/filterHover.js"></script>
