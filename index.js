@@ -93,6 +93,4 @@ app.get('/test', (req, res)=>{
 	console.log(myArray)
 })
 //=================================================================
-app.listen(process.env.PORT, ()=>{
-	console.log(`listening at ${port}`)
-})
+app.listen()
