@@ -10,7 +10,7 @@ const categorize = require('./public/js/categorize')
 const data = require('./public/js/dataArray')
 const advertised = require('./public/js/advertised')
 let description = ""
-const port = 3000
+// const port = 3000
 const pagination = require('./public/js/pagination')
 let dataArray = new shuffle(data).shuffle()
 
@@ -93,6 +93,6 @@ app.get('/test', (req, res)=>{
 	console.log(myArray)
 })
 //=================================================================
-app.listen(process.env.PORT || port, ()=>{
+app.listen(process.env.PORT, ()=>{
 	console.log(`listening at ${port}`)
 })
