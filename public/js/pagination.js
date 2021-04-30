@@ -1,10 +1,13 @@
 module.exports = function paginate(data, advertised, currentPage){
     let limit = 9
-    let start = (currentPage-1) * (limit-advertised)//0-6-12
-    let end = currentPage * (limit-advertised)//6-12-18
+    let start = (currentPage-1) * (limit-advertised)//0-9-18
+    let end = currentPage * (limit-advertised)//9-18-27
     const results = {}
-    results.fullLength = data.length
+    results.fullLength = data.length + advertised
+    results.noAdLength = data.length
     results.next = {
+        current: currentPage,
+        count: Math.ceil(results.fullLength/limit),
         page: currentPage + 1,
         visible: true
         }
@@ -17,7 +20,7 @@ module.exports = function paginate(data, advertised, currentPage){
         results.previous.visible=false
     }
 
-    if(currentPage>(data.length/limit)+1){
+    if(currentPage>(results.fullLength/limit)){
         results.next.visible=false
     }
 

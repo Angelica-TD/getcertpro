@@ -1,21 +1,47 @@
 <%if(advertised){%>
     <%for(let item in advertised){%>
         <%if(advertised[item].category.includes(cat)){%>
-        <div class="col-lg-4 p-4 text-center">
-            <span class="badge rounded-pill bg-danger">Advertised</span>
-            <a href="<%= advertised[item].url %>" target="_blank" class="link">
-                <%if(advertised[item].logo){%>
-                    <img src="<%= advertised[item].logo %>" class="img-fluid custom-img mx-auto d-block" alt="<%= advertised[item].alt %>">
-                <%}else{%>
-                    <div class="custom-img">
-                        <%= advertised[item].alt %>
-                    </div>
-                <%}%>
-                <h3><%=advertised[item].name%></h3>
-                <p><%=advertised[item].description%></p>
-            </a>
+            <div class="col">
+                <div class="card h-100 p-2 shadow-sm">
+                    <span class="badge rounded-pill bg-danger w-50 mx-auto">Advertised</span>
+                    <img src="<%=advertised[item].logo%>" alt="<%=advertised[item].alt%>" class="img-fluid custom-img mx-auto d-block card-img-top">
+                    <div class="card-body">
+                        <h3 class="card-title" style="height: 100px;">
+                        <%=advertised[item].name%>
+                        </h3>
+                        <div class="text-muted">Type: 
+                            <%=advertised[item].type%>
+                        </div>
+                        <div class="text-muted">Category: 
+                            <a href="/categories/<%=advertised[item].category%>?page=1" class="link-success"><%=advertised[item].category%></a>
+                        </div>
                         
-        </div>
+                    </div>
+                    <div class="card-footer text-center border-0">
+                        <button type="button" class="w-100 btn btn-sm btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#<%=advertised[item].abbr%>">Details</button>
+                    </div>
+                    
+                </div>
+
+                <!-- Modal -->
+                <div class="modal fade" id="<%=advertised[item].abbr%>" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h5 class="modal-title" id="detailModalLabel"><%=advertised[item].name%></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <%=advertised[item].description%>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <a href="<%=advertised[item].url%>" target="_blank" class="btn btn-sm btn-success">Go to website</a>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
         <%}%>
     <%}%>
 <%}%>

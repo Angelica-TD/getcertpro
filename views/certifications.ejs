@@ -2,15 +2,19 @@
 <!-- START COLUMNS CONTAINER FOR CONTENT -->
 <div class="container mb-3">
     <h1>All Certificates</h1>
-    <h3><%=paged.fullLength%> results</h3>
-    
+    <h3><%=paged.noAdLength%> results</h3>
+    <h3><%=paged.next.current%> out of <%=paged.next.count%> pages</h3>
+    Categories:
+    <%for(let item in noDupes){%>
+        <a href="/categories/<%=noDupes[item]%>?page=1" class="link-success"><%=noDupes[item]%></a>
+    <%}%>
     <!-- START MIDDLE COLUMN CONTENT -->
     <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 g-3">
         <%if(advertised){%>
             <%for(let item in advertised){%>
                 <div class="col">
                     <div class="card h-100 p-2 shadow-sm">
-                        <span class="badge rounded-pill bg-danger">Advertised</span>
+                        <span class="badge rounded-pill bg-danger w-50 mx-auto">Advertised</span>
                         <img src="<%=advertised[item].logo%>" alt="<%=advertised[item].alt%>" class="img-fluid custom-img mx-auto d-block card-img-top">
                         <div class="card-body">
                             <h3 class="card-title" style="height: 100px;">
@@ -20,7 +24,7 @@
                                 <%=advertised[item].type%>
                             </div>
                             <div class="text-muted">Category: 
-                                <%=advertised[item].category%>
+                                <a href="/categories/<%=advertised[item].category%>?page=1" class="link-success"><%=advertised[item].category%></a>
                             </div>
                             
                         </div>
@@ -65,7 +69,7 @@
                         </div>
                         <div class="text-muted">Category: 
                             <%for (let item in cert.category){%>
-                                <a href="/certs/filter/<%=cert.category[item]%>" class="link-success"><%=cert.category[item]%></a>
+                                <a href="/categories/<%=cert.category[item]%>?page=1" class="link-success"><%=cert.category[item]%></a>
                             <%}%>
                         </div>
                         <!-- <%=cert._id%> -->
@@ -97,7 +101,7 @@
         <%}%>
     </div>
     <nav aria-label="Content navigation">
-        <ul class="justify-content-center text-center pagination pagination-lg">
+        <ul class="justify-content-center text-center pagination pagination-lg my-5">
             <%if(paged.previous.visible===true){%>
             <li class="page-item previous">
                 <a class="page-link" href="allcertifications?page=<%=paged.previous.page%>" aria-label="Previous">
@@ -113,7 +117,7 @@
             </li>
             <%}%>
         </ul>
-      </nav>
+    </nav>
 
 </div>
 		<!-- END MIDDLE COLUMN CONTENT -->
