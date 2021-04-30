@@ -3,15 +3,8 @@
     <%- include('../partials/head') %>
   <body class="d-flex flex-column vh-100">
     <%- include('../partials/navigation') %>
-    <%if(title === "Cert Guru"){%>
-        <%- include('../partials/carousel') %>
-    <%}%>
-      <main class="container mt-3">
-            <section>
-                <%- body -%>
-            </section>
+      <main class="container-fluid p-0">
+          <%- body -%>
       </main>
     
     <%- include('../partials/footer') %>
-  </body>
-</html>

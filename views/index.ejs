@@ -1,23 +1,47 @@
 <% layout('layouts/boilerplate')%>
+<div class="px-4 pt-5 my-5 text-center border-bottom overflow-hidden" style="height: 78vh;">
+    <h1 class="display-4 fw-bold">Welcome to GoCertPro</h1>
+    <div class="col-lg-6 mx-auto" style="height: 30vh;">
+      <p class="lead mb-4">Find the right certification for you. Over 20 certifications to choose from</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <a href="/allcertifications?page=1" class="btn btn-lg btn-success px-4 me-3">Go</a>
+      </div>
+    </div>
+    <div class="overflow-hidden" style="max-height: 50vh;">
+      <div class="container px-5">
+        <img src="/images/hero.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="600" loading="lazy">
+      </div>
+    </div>
+</div>
 
+<div class="container marketing pt-5">
+  <!-- START THE FEATURETTES -->
 
-	<div class="container top-certs">
-		<h2>Top Certifications</h2>
-		<div class="row">
-			<%for(let item of top){%>
-			<div class="col-lg-4">
-				<a href="<%= item.url %>" target="_blank" class="link">
-					<%if(item.bgimage){%>
-						<img src="<%= item.bgimage %>" class="img-fluid custom-img mx-auto d-block" alt="...">
-					<%}else{%>
-						<img alt="" class="custom-img">
-					<%}%>
-					<h2><%=item.name%></h2>
-					<p><%=item.description%></p>
-					<!-- <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p> -->
-				</a>
-			</div><!-- /.col-lg-4 -->	
-			<%}%>
-		</div><!-- /.row -->
+  <div class="row featurette">
+    <div class="col-md-7">
+      <h2 class="featurette-heading">Find trainings and certifications in <a class="my-link" href="categories/Networking?page=1">Networking</a></h2>
+      <p class="lead">From getting certification for cabling and equipment installation to server configuration and administration. Along with other technology provider specific trainings.</p>
+    </div>
+    <div class="col-md-5">
+      <img src="/images/networking.jpg" class="featurette-image border rounded-3 shadow-lg img-fluid mx-auto" style="width: 500; height: 500;" alt="">
+    </div>
+  </div>
 
-	</div>
+  <hr class="featurette-divider">
+
+  <div class="row featurette">
+    <div class="col-md-7 order-md-2">
+      <h2 class="featurette-heading">Find trainings and certifications in <a class="my-link" href="categories/Cloud?page=1">Cloud Computing</a></h2>
+      <p class="lead">Whether you're looking to get started in a cloud computing career or looking to get professionally certified.</p>
+    </div>
+    <div class="col-md-5 order-md-1">
+      <img src="/images/cloud.png" class="featurette-image border rounded-3 shadow-lg img-fluid mx-auto" style="width: 500; height: 500;" alt="">
+
+    </div>
+  </div>
+
+  <hr class="featurette-divider">
+
+  <!-- /END THE FEATURETTES -->
+
+</div>
