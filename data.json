@@ -12,7 +12,7 @@
             "hidden": "Yes",
             "type": ["Certification", "Association"],
             "category": ["Networking"],
-            "other":[3, "ad"],
+            "other":[3],
             "abbr": "cisco"
         },
           
@@ -106,7 +106,7 @@
             "hidden": "No",
             "type": ["Certification"],
             "category": ["Other"],
-            "other":[3, "ad"],
+            "other":[3],
             "abbr": "flukeel"
         },
         {	
@@ -166,7 +166,7 @@
             "hidden": "No",
             "type": ["Certification"],
             "category": ["Networking"],
-            "other":[3, "ad"],
+            "other":[3],
             "abbr": "pexip"  
         },
         {	
