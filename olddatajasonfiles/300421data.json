@@ -1,7 +1,7 @@
 {  
     "allcerts": [
         {	
-            "name": "Cisco Certified Network Associate (CCNA)",
+            "name": "Cisco Certified Network Associcate (CCNA)",
             "area": "IT",
             "company": "Cisco",
             "description": "Achieving CCNA certification is the first step in preparing for a career in IT technologies. To earn CCNA certification, you pass one exam that covers a broad range of fundamentals for IT careers, based on the latest networking technologies, software development skills, and job roles. The CCNA Preparation Bundle helps you prepare to take the 200-301 Cisco Certified Network Associate (CCNA) exam. Included in the bundle are Implementing and Administering Cisco Solutions, Cisco exam review and CCNA Exam Voucher.",
@@ -69,7 +69,7 @@
             "company": "Cisco",
             "description": "Cisco Certified Technicians have the skills to diagnose, restore, repair, and replace critical Cisco networking and system devices at customer sites. Technicians work closely with the Cisco Technical Assistance Center (TAC) to quickly and efficiently resolve support incidents.",
             "alt": "image",
-            "logo": "/images/ciscologo.png",
+            "logo": "https://1000logos.net/wp-content/uploads/2016/11/Cisco-logo.png",
             "bgimage":"",
             "url": "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/entry/technician-cct.html",
             "hidden": "No",
@@ -204,10 +204,10 @@
             "area": "IT",
             "company": "International Organization for Standardization",
             "description": "ISO Certification can be a useful tool to add credibility, by demonstrating that your product or service meets the expectations of your customers. For some industries, certification is a legal or contractual requirement.",
-            "alt": "ISO logo",
-            "logo": "/",
+            "alt": "ISO",
+            "logo": "/images/msclogo.png",
             "bgimage":"",
-            "url": "https://www.iso.org/home.html",
+            "url": "https://mscglobal.com.au/",
             "hidden": "No",
             "type": ["Organisation"],
             "category": ["Other","Computer Science"],
@@ -395,21 +395,6 @@
             "abbr": "oracle"  
         },
         {	
-            "name": "Oracle Cloud Infrastructure (OCI) Certification Paths",
-            "area": "IT",
-            "company": "Oracle",
-            "description": "Oracle Cloud Infrastructure (OCI) provides an infrastructure that matches the performance, control, and governance of enterprise datacenters, while delivering the scale, elasticity, and cost-savings of public clouds. Enable the transformation of your technology infrastructure to the cloud with OCI training.",
-            "alt": "Oracle",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/9/94/Logo_oracle.jpg",
-            "bgimage":"",
-            "url": "https://education.oracle.com/oracle-certification-path/pPillar_640",
-            "hidden": "No",
-            "type": ["Certification"],
-            "category": ["Cloud"],
-            "other":[3, "Multiple"],
-            "abbr": "oracle"  
-        },
-        {	
             "name": "AWS",
             "area": "IT",
             "company": "Amazon",
@@ -420,7 +405,7 @@
             "url": "https://aws.amazon.com/training/",
             "hidden": "No",
             "type": ["Certification"],
-            "category": ["Cloud"],
+            "category": ["Servers and Workstations", "Application", "Databases"],
             "other":[3, "Multiple"],
             "abbr": "aws"  
         }

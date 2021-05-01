@@ -5,12 +5,10 @@ const contentData = require('./data.json')
 const ejsMate = require('ejs-mate')
 const shuffle = require('./public/js/shuffle')
 let noDupes = require('./public/js/removeDuplicates')
-const filter = require('./public/js/filter')
 const categorize = require('./public/js/categorize')
 const data = require('./public/js/dataArray')
 const advertised = require('./public/js/advertised')
 let description = ""
-// const port = 3000
 const pagination = require('./public/js/pagination')
 let dataArray = new shuffle(data).shuffle()
 
@@ -30,9 +28,9 @@ app.use(express.json())
 //--------ROUTES--------------------
 //home page route
 app.get('/', (req, res)=>{
-	let title = "GoCertPro"
+	let title = "GetCertPro"
 	dataArray = new shuffle(data).shuffle()
-	description = "Cert Guru lists all helpful certifications for all levels beginner to expert and all price ranges from free certifications onward. Includes certifications from Microsoft, Cisco, Axelos, Mimecast, Sophos, Atlassian, New Relic, and much more."
+	description = "GetCertPro lists all helpful certifications for all levels beginner to expert and all price ranges from free certifications onward. Includes certifications from Microsoft, Cisco, Axelos, Mimecast, Sophos, Atlassian, New Relic, and much more."
 	// console.log(noDupes)
 	res.render("index", {...contentData, noDupes, title, description})
 })
@@ -41,7 +39,7 @@ app.get('/', (req, res)=>{
 //shuffled results
 app.get('/allcertifications', (req, res)=>{
 	let queryPage = parseInt(req.query.page)
-	let title = "All Certifications - GoCertPro"
+	let title = "All Certifications - GetCertPro"
 	//render all certs
 	let paged = pagination(dataArray, advertised.length, queryPage)
 	description = `All certifications`
@@ -58,7 +56,7 @@ app.get('/categories/:cat', (req,res)=>{
 	let queryPage = parseInt(req.query.page)
 	let paged
 	const {cat} = req.params
-	let title = `${cat} - GoCertPro`
+	let title = `${cat} - GetCertPro`
 	description =`Find all certifications for ${cat}`
 	if(noDupes.includes(cat)){
 		let categorized =  categorize(cat)
@@ -74,12 +72,12 @@ app.get('/categories/:cat', (req,res)=>{
 })
 
 app.get('/contact', (req,res)=>{
-	let title = `Contact - GoCertPro`
+	let title = `Contact - GetCertPro`
 	res.render('contact', {title, noDupes, description})
 })
 
 app.get('/sitemap', (req,res)=>{
-	let title = `Sitemap - GoCertPro`
+	let title = `Sitemap - GetCertPro`
 	res.render('sitemap', {title, noDupes})
 })
 
@@ -93,4 +91,4 @@ app.get('/test', (req, res)=>{
 	console.log(myArray)
 })
 //=================================================================
-app.listen()
+app.listen(80)

@@ -22,6 +22,12 @@ a{
 	object-fit: contain;
 }
 
+.hero-img{
+    /* width: 700px; */
+	height: 400px;
+	object-fit: contain;
+}
+
 .my-wrap{
 	flex-wrap: wrap;
 }
@@ -111,11 +117,7 @@ footer, footer li a{
     color: rgba(255,255,255,.55);
 }
 
-.custom-img{
-    width: 200px;
-	height: 100px;
-    object-fit: contain;
-}
+
 .my-link{
     color: #6c757d;
     transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;

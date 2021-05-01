@@ -20,7 +20,7 @@ module.exports = function paginate(data, advertised, currentPage){
         results.previous.visible=false
     }
 
-    if(currentPage>(results.fullLength/limit)){
+    if(currentPage>=(results.fullLength/limit)){
         results.next.visible=false
     }
 
