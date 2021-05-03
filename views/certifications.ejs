@@ -75,8 +75,8 @@
                         <h3 class="card-title" style="height: 100px;">
                         <%=cert.name%>
                         </h3>
-                        <div class="text-muted">Type: 
-                            <%=cert.type%>
+                        <div class="text-muted">Company: 
+                            <%=cert.company%>
                         </div>
                         <div class="text-muted">Category: 
                             <%for (let item in cert.category){%>
@@ -93,19 +93,26 @@
                 <!-- Modal -->
                 <div class="modal fade" id="<%=cert.abbr%>" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h5 class="modal-title" id="detailModalLabel"><%=cert.name%></h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <div class="modal-content p-4">
+                            <div class="modal-header">
+                            <h3 class="modal-title" id="detailModalLabel">
+                                <img src="<%=cert.logo%>" class="img-fluid custom-img mx-auto d-block"/>
+                                <p><%=cert.name%></p>
+                                
+                            </h3>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h6 class="mb-3"><%=cert.description[0]%></h6>
+                                <p class="mb-3"><%=cert.description[1]%></p>
+                                <b class="mb-3">Click "Go to website" for more details</b>
+                                
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <a href="<%=cert.url%>" target="_blank" class="btn btn-sm btn-success">Go to website</a>
+                            </div>
                         </div>
-                        <div class="modal-body">
-                            <%=cert.description%>
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
-                        <a href="<%=cert.url%>" target="_blank" class="btn btn-sm btn-success">Go to website</a>
-                        </div>
-                    </div>
                     </div>
                 </div>  
             </div>
