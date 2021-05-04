@@ -32,7 +32,7 @@ task 3:
 For Website
 - change " from" to " from." (add dot) done
 - Fix home page image - "Under construction"
-- Fix Next page going to last +1 pages
+- Fix Next page going to last +1 pages done
 - Fix spelling errors in associate ccna done
 - Fix generic desciption for cert specific description
 - [ Decide]  on version control and stick to it :)
@@ -41,12 +41,19 @@ For Website
 For FaceBook
 - Create home messages "Visit our website as we add new crouses weekly"
 - Our website is underconstruction but fully usable, please clike like button for notfications.
-- Create template notification for Added x new certificates for Mircrosoft +I, Cisco CCNP, Orale  with URL links
+- Create template notification for Added x new certificates for Mircrosoft +I, Cisco CCNP, Oracle  with URL links
 - Create template notification for sponsor/partner - thank sponsor
 - Create notication for sponsor course/event
 
-
-
 Ongoing 
 - Where Multiple - Create separate certification for 1 course (from each site) mainly Oracle, Microsoft, and Cisco
+
+
+
+04/05
+-ask about pexip https://www.pexip.com/training, ieee, iso
+- Issue register:
+    under construction hidden on mobile
+    pagination too small on mobile
+    no rollout/update run sheet
 

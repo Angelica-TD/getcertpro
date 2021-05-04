@@ -8,17 +8,55 @@
                 "This CCNA Preparation Bundle helps you prepare to take the 200-301 Cisco Certified Network Associate (CCNA) exam. Included in the bundle are Implementing and Administering Cisco Solutions, Cisco exam review and CCNA Exam Voucher.",
                 "Achieving CCNA certification is the first step in preparing for a career in IT technologies. To earn CCNA certification, you pass one exam that covers a broad range of fundamentals for IT careers, based on the latest networking technologies, software development skills, and job roles. "
             ],
-            "alt": "image",
+            "alt": "cisco logo",
             "logo": "/images/ciscologo.png",
             "bgimage":"https://cdn.hipwallpaper.com/i/93/17/ywrWlP.png",
             "url": "https://learningnetworkstore.cisco.com/on-demand-e-learning/ccna-preparation-bundle-eltex-ccnaprep-v1-023646",
-            "hidden": "Yes",
+            "hidden": "No",
             "type": ["Certification", "Association"],
             "category": ["Networking"],
-            "other":[3],
-            "abbr": "cisco"
+            "other":[3, "Multiple"],
+            "abbr": "cisco",
+            "level": "Associate",
+            "otherlevels": ["Entry", "Professional", "Expert"]
         },
-          
+        {   
+            "name": "Cisco Certified Technician (CCT)",
+            "area": "IT",
+            "company": "Cisco",
+            "description": ["Cisco Certified Technicians have the skills to diagnose, restore, repair, and replace critical Cisco networking and system devices at customer sites. Technicians work closely with the Cisco Technical Assistance Center (TAC) to quickly and efficiently resolve support incidents."],
+            "alt": "cisco logo",
+            "logo": "/images/ciscologo.png",
+            "bgimage":"",
+            "url": "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/entry/technician-cct.html",
+            "hidden": "No",
+            "type": ["Certification"],
+            "category": ["Networking"],
+            "other":[3, "Multiple"],
+            "abbr": "cct",
+            "level": "Entry",
+            "otherlevels": ["Associate", "Professional", "Expert"]
+        },
+        {   
+            "name": "Cisco Certified CyberOps Associate",
+            "area": "IT",
+            "company": "Cisco",
+            "description": [
+                "As cyberattacks become more aggressive and complex, modern security measures require a proactive approach to IT, network, cloud, and data security. The new Cisco Certified CyberOps certification and training program provides that foundation.",
+                "The Cisco Certified CyberOps Associate certification validates your skills and knowledge in security concepts, security monitoring, host-based analysis, network intrusion analysis, and security policies and procedures."
+            ],
+            "alt": "cisco logo",
+            "logo": "/images/ciscologo.png",
+            "bgimage":"",
+            "url": "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/associate/cyberops-associate.html",
+            "hidden": "No",
+            "type": ["Certification"],
+            "category": ["Cybersecurity"],
+            "other":[3, "Multiple"],
+            "abbr": "ccco",
+            "level": "Associate",
+            "otherlevels": ["Professional", "Expert"]
+        },
         {   
             "name": "Mimecast Warrior™(Level 1): Secure Email Gateway",
             "area": "IT",
@@ -27,85 +65,104 @@
                 "Get started in Mimecast Secure Email Gateway.",
                 "Understand how Mimecast Secure Email Gateway is set up and how it works by setting up and monitoring email flow plus learn about basic principles of how policies are applied and scoped. Learn about Mimecast solutions that can protect against information leaks and how these solutions work."
             ],
-            "alt": "Mimecast",
+            "alt": "mimecast warrior logo",
             "logo": "/images/mcpplevel1.jpg",
             "bgimage":"https://www.mimecast.com/globalassets/global/2020/education/mcpp-level-3-commander-icon.jpg",
             "url": "https://www.mimecast.com/customer-success/education/certifications/",
             "hidden": "No",
             "type": ["Certification"],
-            "category": ["Monitoring and Administration", "IT Security"],
-            "other":[3],
-            "abbr": "mimecast"
+            "category": ["Email Management", "Cloud Services"],
+            "other":[3, "Multiple"],
+            "abbr": "mimewar",
+            "level": "Level 1 - Warrior™",
+            "otherlevels": ["Level 2 - Gladiator™", "Level 3 - Commander™"]
         },
     
         {	
             "name": "ITIL® Foundation Certification",
             "area": "IT",
-            "company": "Axelos",
+            "company": "Various",
             "description": ["The ITIL Certification Scheme provides a modular approach to the ITIL framework, and is comprised of a series of qualifications focused on different aspects of IT and digital transformation."],
-            "alt": "Axelos - ITIL®",
+            "alt": "Axelos - ITIL® logo",
             "logo": "https://www.axelos.com/SiteImages/General/ProductLogos/axelos-large.png",
             "bgimage":"",
             "url": "https://www.axelos.com/certifications/itil-certifications/itil-foundation",
             "hidden": "No",
             "type": ["Certification"],
-            "category": ["Monitoring and Administration", "Computer Science"],
+            "category": ["IT Service Management", "Framework"],
             "other":[3],
-            "abbr": "itil"
+            "abbr": "itil",
+            "level": "Foundation",
+            "otherlevels": ["Managing Professional", "Strategic Leader", "Master"]
+        },
+        {	
+            "name": "Microsoft Operations Framework Foundation",
+            "area": "IT",
+            "company": "Exin",
+            "description": [
+                "Microsoft Operations Framework Foundation is specially designed for IT professionals who are involved in the day-to-day operations of organizations. It is also ideal for individuals who are interested in fulfilling such a role.",
+                "Professionals are tested on their knowledge about ensuring the availability, reliability, and manageability of IT systems."
+
+            ],
+            "alt": "Exin Microsoft Operations Framework badge",
+            "logo": "/images/exinmof.png",
+            "bgimage":"",
+            "url": "https://www.exin.com/qualification-program/microsoft-operations-framework",
+            "hidden": "No",
+            "type": ["Certification"],
+            "category": ["IT Service Management", "Framework"],
+            "other":[3],
+            "abbr": "exinmof",
+            "level": "Foundation",
+            "otherlevels": ["N/A"]
         },
         {   
             "name": "Microsoft Azure Fundamentals",
             "area": "IT",
             "company": "Microsoft",
             "description": ["This certification is intended for candidates who are just beginning to work with cloud-based solutions and services or are new to Azure."],
-            "alt": "image",
+            "alt": "microsoft azure logo",
             "logo": "https://docs.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg",
             "bgimage":"",
             "url": "https://docs.microsoft.com/en-us/learn/certifications/azure-fundamentals/",
             "hidden": "No",
             "type": ["Certification"],
-            "category": ["Cloud", "Azure"],
+            "category": ["Cloud Services"],
             "other":[3],
-            "abbr": "azure"
-    
-        },
-        {   
-            "name": "Cisco Certified Technician (CCT)",
-            "area": "IT",
-            "company": "Cisco",
-            "description": ["Cisco Certified Technicians have the skills to diagnose, restore, repair, and replace critical Cisco networking and system devices at customer sites. Technicians work closely with the Cisco Technical Assistance Center (TAC) to quickly and efficiently resolve support incidents."],
-            "alt": "image",
-            "logo": "/images/ciscologo.png",
-            "bgimage":"",
-            "url": "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/entry/technician-cct.html",
-            "hidden": "No",
-            "type": ["Certification"],
-            "category": ["Networking"],
-            "other":[3],
-            "abbr": "cct"
+            "abbr": "azure",
+            "level": "Fundamental",
+            "otherlevels": ["Associate", "Expert"]
     
         },
         {	
-            "name": "Sophos Certified",
+            "name": "Sophos Certified Engineer (Demo) - Partner Certification",
             "area": "IT",
             "company": "Sophos",
-            "description": ["If you’re a Sophos customer, we want to make sure you get the best from your investment. Our Sophos Administrator courses are designed to do just that. Ask your Sophos Partner how to buy a course and you’ll be on the way to sharpening your product know-how while simplifying your job as an administrator."],
-            "alt": "Sophos",
-            "logo": "https://interworks.com/wp-content/uploads/2017/09/Sophos-ATC-LogoSQ.png",
+            "description": [
+                "The Sophos Certified Engineer training is our first level of technical training, giving you a great overview of the key features of our products and all of the knowledge you need to run a demo or a simple proof of concept.",
+                "First, complete the Sophos Central Overview course. This is a short introduction to Sophos Central and is a foundation for all of the remaining technical training. Next, complete one Certified Engineer course from the available list. We'd recommend Central Endpoint and Server or XG Firewall, but the choice is yours!"
+            ],
+            "alt": "Sophos partner logo",
+            "logo": "/images/sophospartner.png",
             "bgimage":"https://www.sophos.com/en-us/medialibrary/PDFs/partners/sophos-partner-certification-path-deskaid-na.pdf",
             "url": "https://www.sophos.com/en-us/company/training.aspx",
             "hidden": "No",
             "type": ["Certification"],
-            "category": ["Monitoring and Administration", "IT Security"],
-            "other":[3,"multipe"],
-            "abbr": "sophos"
+            "category": ["Cybersecurity"],
+            "other":[3, "Multiple"],
+            "abbr": "sophoseng",
+            "level": "Engineer",
+            "otherlevels": ["Sales Consultant", "Architect", "Technician"]
         },
         {	
             "name": "Fluke - Electrical Measurement Safety Online Course",
             "area": "IT",
             "company": "Fluke",
-            "description": ["This free, self-paced, online course describes the electrical dangers you may face in the workplace, the safety standards to protect you and the best practices involved with test tool safety."],
-            "alt": "Fluke",
+            "description": [
+                "This free, self-paced, online course describes the electrical dangers you may face in the workplace, the safety standards to protect you and the best practices involved with test tool safety.",
+                "In this 4-hour online course you will learn about safe work practices, inspect and test your test equipment, best practical tools and tips to extend your safety."
+            ],
+            "alt": "Fluke logo",
             "logo": "https://processmeasurementco.com/wp-content/uploads/FLUKE-logo-300x93.jpg",
             "bgimage":"",
             "url": "https://www.fluke.com/en-au/learn/online-courses/electrical-measurement-safety",
@@ -113,14 +170,19 @@
             "type": ["Certification"],
             "category": ["Other"],
             "other":[3],
-            "abbr": "flukeel"
+            "abbr": "flukeel",
+            "level": "Entry",
+            "otherlevels": ["N/A"]
         },
         {	
-            "name": "Fluke - Insulation Resistance",
+            "name": "Fluke - Insulation Resistance Testing",
             "area": "IT",
             "company": "Fluke",
-            "description": ["Insulation resistance testing puts a qualitative value on the condition of conductor insulation and the internal insulation of different pieces of electrical equipment."],
-            "alt": "Fluke",
+            "description": [
+                "Insulation resistance testing puts a qualitative value on the condition of conductor insulation and the internal insulation of different pieces of electrical equipment.",
+                "In this online course you will learn why measurement and maintenance principles are important, different insulation resistance test instruments and insulation resistance testing applications and how they apply to your testing needs."
+            ],
+            "alt": "Fluke logo",
             "logo": "https://processmeasurementco.com/wp-content/uploads/FLUKE-logo-300x93.jpg",
             "bgimage":"",
             "url": "https://www.fluke.com/en-au/learn/online-courses/insulation-resistance-online-course",
@@ -128,14 +190,19 @@
             "type": ["Certification"],
             "category": ["Other"],
             "other":[3],
-            "abbr": "flukein"
+            "abbr": "flukein",
+            "level": "Entry",
+            "otherlevels": ["N/A"]
         },
         {	
-            "name": "New Relic Fundamentals Certification Program",
+            "name": "New Relic Fundamentals Certification Program Overview",
             "area": "IT",
             "company": "New Relic",
-            "description": ["The New Relic Fundamentals Certification Program is made up of three components designed to take you through the basics you need to know to manage your applications and services."],
-            "alt": "New Relic",
+            "description": [
+                "Get the skills and knowledge you need to use New Relic to see what's happening in your application, understand where the problems are, discover opportunities for optimizing your entire application ecosystem, and make sure you never miss an issue that needs attention.",
+                "The New Relic Fundamentals Certification program will help you build the foundation you need to become an expert on the New Relic Observability Platform."
+            ],
+            "alt": "New Relic logo",
             "logo": "https://cc.sj-cdn.net/instructor/1h7ahmdd447dx-new-relic/themes/3c4jawy1asa1h/header-logo.1595599299.png",
             "bgimage":"https://cc.sj-cdn.net/instructor/1h7ahmdd447dx-new-relic/courses/2f23962hospjm/promo-image.1572990285.png",
             "url": "https://learn.newrelic.com/series/fundamentals/new-relic-fundamentals-certification-program-overview",
@@ -143,277 +210,446 @@
             "type": ["Certification"],
             "category": ["Monitoring and Administration"],
             "other":[3,"multiple"],
-            "abbr": "relic"
+            "abbr": "relic",
+            "level": "Fundamentals",
+            "otherlevels": ["N/A"]
         },
         {	
-            "name": "Atlassian Cloud 101",
+            "name": "Jira Administrator for Cloud",
             "area": "IT",
             "company": "Atlassian",
-            "description": ["Learn about the basics of Atlassian products like Jira and Confluence Cloud. Jira is a software development tool used by agile teams to Plan, Track and Release great software as well as monitor and improve team performance based on real-time visual data. Confluence Cloud is a remote-friendly team workspace where you can build, organize and collaborate on work in one place from virtually anywhere."],
+            "description": [
+                "Jira is a software development tool used by agile teams to Plan, Track and Release great software as well as monitor and improve team performance based on real-time visual data.",
+                "Jira Administration for Cloud covers the skills needed to configure and manage Jira Cloud to support any development or business team."
+            ],
             "alt": "Atlassian - Jira",
             "logo": "https://wac-cdn-2.atlassian.com/image/upload/f_auto,q_auto/dam/jcr:616e6748-ad8c-48d9-ae93-e49019ed5259/Atlassian-horizontal-blue-rgb.svg?cdnVersion=1549",
             "bgimage":"",
-            "url": "https://training.atlassian.com/free-training-catalog",
+            "url": "https://training.atlassian.com/learning-paths/jira-admin",
             "hidden": "No",
             "type": ["Certification"],
-            "category": ["Application", "Project Management"],
+            "category": ["Monitoring and Administration", "Project Management"],
             "other":[3],
-            "abbr": "atlas"
+            "abbr": "atlas",
+            "level": "Advanced",
+            "otherlevels": ["N/A"]
         },
         {	
-            "name": "Pexip Academy Training Programs",
+            "name": "PRINCE2® Project Management Certifications - Foundation",
             "area": "IT",
-            "company": "Pexip",
-            "description": ["Bring people and teams together with a single, high-powered video meeting platform to amplify your company communications."],
-            "alt": "Pexip",
-            "logo": "https://www.pexip.com/hubfs/Pexip%20Logo%20Blue%20RGB.png",
-            "bgimage":"",
-            "url": "https://www.pexip.com/training",
-            "hidden": "No",
-            "type": ["Certification"],
-            "category": ["Networking"],
-            "other":[3],
-            "abbr": "pexip"  
-        },
-        {	
-            "name": "PRINCE2® Project Management Certifications",
-            "area": "IT",
-            "company": "Axelos",
-            "description": ["PRINCE2 is an easy to learn and flexible method that can be adapted to all types of project. The PRINCE2 certification scheme places a new emphasis on tailoring the method to the needs of organizations and project management environments"],
-            "alt": "Axelos - ITIL®",
-            "logo": "https://www.axelos.com/SiteImages/General/ProductLogos/axelos-large.png",
+            "company": "Various",
+            "description": [
+                "PRINCE2 is an easy to learn and flexible method that can be adapted to all types of project.",
+                "The Foundation certification aims to confirm that you know and understand the PRINCE2 method well enough to be able to work effectively with, or as a member of, a project management team working within an environment supporting PRINCE2. The Foundation certification is also a prerequisite for the Practitioner certification."
+            ],
+            "alt": "Axelos - Prince2 banner",
+            "logo": "/images/prince2.gif",
             "bgimage":"",
             "url": "https://www.axelos.com/certifications/prince2",
             "hidden": "No",
             "type": ["Certification"],
             "category": ["Project Management"],
             "other":[3],
-            "abbr": "prince"  
+            "abbr": "prince",
+            "level": "Foundation",
+            "otherlevels": ["Practitioner"]
         },
         {	
-            "name": "IEEE",
+            "name": "IEEE Learning Network",
             "area": "IT",
-            "company": "Institute of Electrical and Electronics Engineers",
-            "description": ["The world's largest technical professional organization for the advancement of technology"],
-            "alt": "IEEE",
-            "logo": "https://www.ieee.org/content/dam/ieee-org/ieee/web/org/globals/88857-22.gif",
+            "company": "IEEE",
+            "description": [
+                "Explore hundreds of continuing education courses from IEEE, all in one place.",
+                "IEEE does not provide access to individual certificate purchase options. Instead, IEEE offers a variety of eLearning courses available for purchase. At the successful completion of the course, the student can access a certificate providing the CEUs or PDHs associated with that particular learning offering."
+            ],
+            "alt": "IEEE logo",
+            "logo": "/images/ieeeln.png",
             "bgimage":"",
-            "url": "https://www.ieee.org/",
+            "url": "https://iln.ieee.org/public/trainingcatalog.aspx",
             "hidden": "No",
             "type": ["Organisation"],
-            "category": ["Other","Computer Science"],
+            "category": ["Other"],
             "other":[3],
-            "abbr": "ieee"  
+            "abbr": "ieee",
+            "level": "N/A",
+            "otherlevels": ["N/A"]
         },
         {	
-            "name": "ISO Certifications",
-            "area": "IT",
-            "company": "International Organization for Standardization",
-            "description": ["ISO Certification can be a useful tool to add credibility, by demonstrating that your product or service meets the expectations of your customers. For some industries, certification is a legal or contractual requirement."],
-            "alt": "ISO logo",
-            "logo": "/",
-            "bgimage":"",
-            "url": "https://www.iso.org/home.html",
-            "hidden": "No",
-            "type": ["Organisation"],
-            "category": ["Other","Computer Science"],
-            "other":[3],
-            "abbr": "iso"  
-        },
-        {	
-            "name": "Juniper Networks Certification Program (JNCP)",
+            "name": "Juniper Cloud Associate - JNCIA",
             "area": "IT",
             "company": "Juniper Networks",
-            "description": ["The Juniper Networks Certification Program (JNCP) is a multi-tiered program of written and hands-on Lab exams. Our mission is to validate the Juniper skill set among the world's leading networking professionals."],
-            "alt": "Juniper Networks",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/31/Juniper_Networks_logo.svg/1200px-Juniper_Networks_logo.svg.png",
+            "description": [
+                "Designed for networking professionals with introductory-level knowledge of Juniper Networks cloud-based networking architectures, theory, and best practices.",
+                "Prepare to take the exam by taking our recommended course Juniper Cloud Fundamentals - This course provides a high level overview and understanding of the following concepts: Cloud Network Underlays, Cloud Network Overlays, Cloud Design, Cloud Implementation Methods, Cloud Services, and Juniper Networks Virtualized Platforms."
+            ],
+            "alt": "Juniper cloud path logo",
+            "logo": "/images/jncia.png",
             "bgimage":"",
-            "url": "https://www.juniper.net/us/en/training/certification/",
+            "url": "https://www.juniper.net/us/en/training/certification/certification-tracks/cloud-track?tab=jncia-cloud",
+            "hidden": "No",
+            "type": ["Certification"],
+            "category": ["Networking", "Cloud Services"],
+            "other":[3, "multiple"],
+            "abbr": "jncia",
+            "level": "Associate",
+            "otherlevels": ["Specialist", "Professional", "Expert"]
+        },
+        {	
+            "name": "Juniper Cloud Specialist - JNCIS",
+            "area": "IT",
+            "company": "Juniper Networks",
+            "description": [
+                "For networking professionals with intermediate knowledge of software-defined networking, theory, and best practices. In order to get this certification, you must pass the JNCIS-Cloud exam. Prepare to take the exam by taking our recommended course:",
+                "Cloud Automation using Contrail (CAC) - This course benefits individuals responsible for working with software-defined networking solutions in data center, service provider, and enterprise network environments."
+            ],
+            "alt": "Juniper cloud path logo",
+            "logo": "/images/jncia.png",
+            "bgimage":"",
+            "url": "https://www.juniper.net/us/en/training/certification/certification-tracks/cloud-track?tab=jncis-cloud",
+            "hidden": "No",
+            "type": ["Certification"],
+            "category": ["Networking", "Cloud Services"],
+            "other":[3, "multiple"],
+            "abbr": "jncis",
+            "level": "Specialist",
+            "otherlevels": ["Associate", "Professional", "Expert"]
+        },
+        {	
+            "name": "Juniper Cloud Professional - JNCIP",
+            "area": "IT",
+            "company": "Juniper Networks",
+            "description": [
+                "For networking professionals with advanced knowledge of cloud networking, theory, and best practices. In order to get this certification, you must pass the JNCIP-Cloud exam. Prepare to take the exam by taking our recommended course:",
+                "Enterprise Multicloud Automation and Orchestration Using Contrail (EMCC) - Through demonstrations and hands-on labs, students will gain experience in working with Contrail Enterprise Multicloud in Kubernetes, OpenShift, VMware vCenter, Amazon Web Services (AWS), Microsoft Azure, and Google Cloud Platform (GCP) environments."
+            ],
+            "alt": "Juniper cloud path logo",
+            "logo": "/images/jncia.png",
+            "bgimage":"",
+            "url": "https://www.juniper.net/us/en/training/certification/certification-tracks/cloud-track?tab=jncip-cloud",
+            "hidden": "No",
+            "type": ["Certification"],
+            "category": ["Networking", "Cloud Services"],
+            "other":[3, "multiple"],
+            "abbr": "jncip",
+            "level": "Professional",
+            "otherlevels": ["Associate", "Specialist", "Expert"]
+        },
+        {	
+            "name": "Citrix Certified Associate - App Delivery and Security",
+            "area": "IT",
+            "company": "Citrix",
+            "description": [
+                "Validates the knowledge and skills required by network administrators and engineers to implement and manage Citrix ADC for traffic management, load balancing, content switching and SSL offloading or manage enterprise environments consisting of Citrix ADC and Citrix Gateway for secure remote access to desktops, applications and data.",
+                "Prepare with the recommended training: CNS-225: Deploy and Manage Citrix ADC 13.x with Traffic Management"
+            ],
+            "alt": "Citrix logo",
+            "logo": "https://www.citrix.com/content/dam/citrix61/en_us/images/logos/citrix/citrix-logo-black.png",
+            "bgimage":"",
+            "url": "https://training.citrix.com/learning/course?courseId=2098",
+            "hidden": "No",
+            "type": ["Certification"],
+            "category": ["Application", "Security"],
+            "other":[3, "Multiple"],
+            "abbr": "ccaads",
+            "level": "Associate",
+            "otherlevels": ["Professional", "Expert"]
+        },
+        {	
+            "name": "Citrix Certified Professional - App Delivery and Security",
+            "area": "IT",
+            "company": "Citrix",
+            "description": [
+                "Validates the minimum requisite knowledge and skills required for a Citrix networking professional who can deploy and/or manage Citrix Web App Firewall to secure application access in a Citrix ADC 13 environment, as well as Citrix Application Delivery Management to administer a Citrix ADC environment or optimize Citrix ADC-managed application delivery traffic.",
+                "Prepare with the recommended training: CNS-320: Citrix ADC 12.x Advanced Concepts - Security, Management and Optimization."
+            ],
+            "alt": "Citrix logo",
+            "logo": "https://www.citrix.com/content/dam/citrix61/en_us/images/logos/citrix/citrix-logo-black.png",
+            "bgimage":"",
+            "url": "https://training.citrix.com/learning/course?courseId=1683",
+            "hidden": "No",
+            "type": ["Certification"],
+            "category": ["Application", "Security"],
+            "other":[3, "Multiple"],
+            "abbr": "ccpads",
+            "level": "Professional",
+            "otherlevels": ["Associate", "Expert"]
+        },
+        {	
+            "name": "Citrix Certified Expert - App Delivery and Security",
+            "area": "IT",
+            "company": "Citrix",
+            "description": [
+                "Validates the skills that experienced IT solution designers such as architects, engineers, and consultants need in order to assess and design comprehensive architecture of a Citrix networking environment and configure complex networking configurations.",
+                "Prepare with the recommended training: CNS-420: Citrix Networking Assessment, Design, and Advanced Configuration."
+            ],
+            "alt": "Citrix logo",
+            "logo": "https://www.citrix.com/content/dam/citrix61/en_us/images/logos/citrix/citrix-logo-black.png",
+            "bgimage":"",
+            "url": "https://training.citrix.com/learning/course?courseId=1905",
+            "hidden": "No",
+            "type": ["Certification"],
+            "category": ["Application", "Security"],
+            "other":[3, "Multiple"],
+            "abbr": "cceads",
+            "level": "Expert",
+            "otherlevels": ["Associate", "Professional"]
+        },
+        {	
+            "name": "Dell Technologies Certified Associate - Cloud",
+            "area": "IT",
+            "company": "Dell Technologies",
+            "description": [
+                "Develop a comprehensive understanding of technologies, processes, and mechanisms required to build cloud infrastructure. This enables the participants to make informed decisions on building cloud infrastructure based on a cloud computing reference model and also prepares participants for advanced topics of cloud solutions.",
+                "Complete the recommended training: Cloud Infrastructure and Services v3"
+            ],
+            "alt": "Dell technologies certified associate logo",
+            "logo": "/images/dellassoc.png",
+            "bgimage":"",
+            "url": "https://education.dellemc.com/content/emc/en-us/home/certification-overview/find-exam/Cloud-Infrastructure-Services.html#Tabs1",
+            "hidden": "No",
+            "type": ["Certification"],
+            "category": ["Cloud Infrastructure"],
+            "other":[3, "Multiple"],
+            "abbr": "dcacloud",
+            "level": "Associate",
+            "otherlevels": ["Specialist", "Expert"]
+        },
+        {	
+            "name": "Dell Technologies Certified Specialist - Cloud",
+            "area": "IT",
+            "company": "Dell Technologies",
+            "description": [
+                "Effectively design a cloud infrastructure that supports multiple types of services. The certification supports the skills needed to successfully work within organizations undergoing digital and IT Transformations.",
+                "Complete the recommended training: Cloud Infrastructure Planning and Design v2"
+            ],
+            "alt": "Dell technologies certified specialist logo",
+            "logo": "/images/dellspec.png",
+            "bgimage":"",
+            "url": "https://education.dellemc.com/content/emc/en-us/home/certification-overview/find-exam/Cloud-Architect-Track.html#Tab2|Tabs2",
+            "hidden": "No",
+            "type": ["Certification"],
+            "category": ["Cloud Infrastructure"],
+            "other":[3, "Multiple"],
+            "abbr": "dcscloud",
+            "level": "Specialist",
+            "otherlevels": ["Associate", "Expert"]
+        },
+        {	
+            "name": "Dell Technologies Certified Expert - Cloud",
+            "area": "IT",
+            "company": "Dell Technologies",
+            "description": [
+                "Demonstrate your ability to design services which transform business operations and cloud environments, incorporating the governance, organizational, financial, and technology aspects as well as the management and operation of cloud services",
+                "If you have completed both Associate and Specialist recommended trainings, proceed to Step 4 of the certification process."
+            ],
+            "alt": "Dell technologies certified expert logo",
+            "logo": "/images/dellexp.png",
+            "bgimage":"",
+            "url": "https://education.dellemc.com/content/emc/en-us/home/certification-overview/find-exam/Cloud-Architect-Track.html#Tab2|Tabs3",
+            "hidden": "No",
+            "type": ["Certification"],
+            "category": ["Cloud Infrastructure"],
+            "other":[3, "Multiple"],
+            "abbr": "dcecloud",
+            "level": "Expert",
+            "otherlevels": ["Associate", "Specialist"]
+        },
+        {	
+            "name": "Aruba Certified Switching Associate (ACSA)",
+            "area": "IT",
+            "company": "Aruba - A Hewlett Packard Enterprise company",
+            "description": [
+                "Ideal candidates for this certification are networking IT professionals with a minimum of six months experience in deploying small-to-medium scale network solutions.",
+                "Validate that you have the fundamental skills to configure and manage modern, open standards-based networking solutions for small-to-midsized businesses (SMBs) and campus networks. This certification also validates that you know how to configure, manage and monitor network deployments with the Aruba management solutions."
+            ],
+            "alt": "Aruba switching associate badge",
+            "logo": "https://www.arubanetworks.com/wp-content/uploads/Switching_Associate_badge.png",
+            "bgimage":"",
+            "url": "https://www.arubanetworks.com/support-services/training-services/certified-switching-associate/",
             "hidden": "No",
             "type": ["Certification"],
             "category": ["Networking"],
-            "other":[3, "multiple"],
-            "abbr": "junip"  
+            "other":[3, "Multiple"],
+            "abbr": "acsa",
+            "level": "Associate",
+            "otherlevels": ["Professional", "Expert"]
         },
         {	
-            "name": "Citrix",
+            "name": "Aruba Certified Switching Professional (ACSP)",
             "area": "IT",
-            "company": "Citrix",
-            "description": ["Over 400,000 organizations rely on Citrix.After three decades as an industry pioneer, we’ve learned a few lessons. Like what it really takes to bridge the gap between employee productivity and innovative thinking. And how a new generation of technologies can help people quiet the noise and focus on the work that matters most. That’s why we’re committed to delivering intelligent, unified workspaces that allow individuals to take control of their work days—and empower organizations to achieve more."],
-            "alt": "Citrix",
-            "logo": "https://www.citrix.com/content/dam/citrix61/en_us/images/logos/citrix/citrix-logo-black.png",
+            "company": "Aruba - A Hewlett Packard Enterprise company",
+            "description": [
+                "Typical candidates for this certification are networking IT professionals with a minimum of 1 years' experience deploying enterprise level network solutions.",
+                "Validate that you can implement and operate enterprise level Aruba campus switching solutions."
+            ],
+            "alt": "Aruba switching professional badge",
+            "logo": "https://www.arubanetworks.com/wp-content/uploads/Switching_Professional_badge.png",
             "bgimage":"",
-            "url": "https://training.citrix.com/learning/training/get-started",
+            "url": "https://www.arubanetworks.com/support-services/training-services/certified-switching-professional/",
             "hidden": "No",
             "type": ["Certification"],
-            "category": ["Servers and Workstations", "Application"],
+            "category": ["Networking"],
             "other":[3, "Multiple"],
-            "abbr": "citrix"  
+            "abbr": "acsa",
+            "level": "Professional",
+            "otherlevels": ["Associate", "Expert"]
         },
         {	
-            "name": "Dell/EMC",
+            "name": "Aruba Certified Switching Expert (ACSX)",
             "area": "IT",
-            "company": "Dell",
-            "description": ["Leverage the Dell Technologies Proven Professional program to realize your full potential. A combination of technology-focused and role-based training and exams to cover concepts and principles as well as the full range of Dell Technologies' hardware, software and solutions"],
-            "alt": "Dell/EMC",
-            "logo": "https://logos-world.net/wp-content/uploads/2020/08/Dell-Logo.png",
+            "company": "Aruba - A Hewlett Packard Enterprise company",
+            "description": [
+                "The typical candidate will ideally have more than 5 years of advanced networking experience focused on interpreting complex network architectures and customer requirements to implement, monitor, troubleshoot, and optimize multi-vendor network solutions. The successful candidate is very familiar with Aruba wired switching solutions.",
+                "This certification verifies that you have the expert level skills needed to implement Aruba wired switching solutions, including the ability to implement and optimize enterprise-level Aruba Switching campus LAN solutions."
+            ],
+            "alt": "Aruba switching expert badge",
+            "logo": "https://www.arubanetworks.com/wp-content/uploads/Switching_Expert_badge.png",
             "bgimage":"",
-            "url": "https://education.dellemc.com/content/emc/en-us/home/certification-overview.html",
+            "url": "https://www.arubanetworks.com/support-services/training-services/certified-switching-expert/",
             "hidden": "No",
             "type": ["Certification"],
-            "category": ["Networking", "Servers and Workstations", "Cloud", "IT Security", "Computer Science"],
+            "category": ["Networking"],
             "other":[3, "Multiple"],
-            "abbr": "dell"  
-        },
-        {	
-            "name": " Hewlett Packard",
-            "area": "IT",
-            "company": "Hewlett Packard",
-            "description": ["Technical 'Career Professional' certifications are available to everyone. Sales 'HPE Partner Restricted' certifications are available to individuals employed by HPE or by HPE Partners. This includes OEMs and service partners. Use the “Narrow by” functions below to find a certification."],
-            "alt": "Hewlett Packard",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/46/Hewlett_Packard_Enterprise_logo.svg/1373px-Hewlett_Packard_Enterprise_logo.svg.png",
-            "bgimage":"",
-            "url": "https://certification-learning.hpe.com/ext/certifications",
-            "hidden": "No",
-            "type": ["Certification"],
-            "category": ["Networking", "Servers and Workstations", "Cloud", "IT Security", "Cloud"],
-            "other":[3, "Multiple"],
-            "abbr": "hp"  
+            "abbr": "acsa",
+            "level": "Expert",
+            "otherlevels": ["Associate", "Professional"]
         },
         {	
             "name": "McAfee - Product Training",
             "area": "IT",
             "company": "McAfee",
-            "description": ["The McAfee education services portfolio of product training and security training helps you stay ahead of threats, save time, and maximize the value of your McAfee investment."],
+            "description": [
+                "Gain knowledge and skills to maximize your McAfee solutions.",
+                "McAfee offers a wide range of hands-on product training courses to help you design, set up, configure, and manage your McAfee solutions. Delivered in classrooms and online, our courses help you make the most of your product investment. "
+            ],
             "alt": "McAfee",
             "logo": "https://mcafee-catalog.netexam.com/images/McAfeeLogo.png",
             "bgimage":"https://www.mcafee.com/enterprise/en-au/services/education-services.html",
-            "url": "https://mcafee-catalog.netexam.com/",
+            "url": "https://www.mcafee.com/enterprise/en-au/services/education-services/product-training.html",
             "hidden": "No",
             "type": ["Certification"],
-            "category": ["Security"],
+            "category": ["Product Specific"],
             "other":[3],
-            "abbr": "mcafeeprod"  
+            "abbr": "mcafeeprod",
+            "level": "N/A",
+            "otherlevels": ["N/A"]
         },
         {	
             "name": "McAfee - McAfee Security Training",
             "area": "IT",
             "company": "McAfee",
-            "description": ["The threat landscape today is relentless and unforgiving. The cybersecurity game is changing so often that technology is no longer enough. Every person connected to the internet is at risk of falling victim to an attack, with the consequences being more severe than ever—reaching far beyond the individual to impact communities, organizations, entire industries, and even nations.The future of our society depends on all of us working together to build a Culture of Security. 'Thinking security-first' needs to be engrained in everything we do. It's all of our responsibility. This page is a resource to help make this new security imperative a reality. Here you can stay up-to-date on the latest trends, get practical tips, and be inspired by people living security by example."],
-            "alt": "McAfee",
+            "description": [
+                "Gain the skills you need to proactively defend against the latest security threats.",
+                "Our security courses provide training to help security professionals build secure software and applications, assess vulnerabilities to defend against hacker attacks, and gain critical computer forensics skills to better respond to incidents. Taught by network security experts, our security training features interactive demonstrations and hands-on lab exercises. These instructor-led courses are offered in private classrooms only."
+            ],
+            "alt": "McAfee logo",
             "logo": "https://mcafee-catalog.netexam.com/images/McAfeeLogo.png",
             "bgimage":"https://www.mcafee.com/enterprise/en-au/services/education-services.html",
-            "url": "https://www.mcafee.com/enterprise/en-au/about/cos.html",
+            "url": "https://mcafee-catalog.netexam.com/Training/",
             "hidden": "No",
             "type": ["Certification"],
             "category": ["Security"],
             "other":[3],
-            "abbr": "mcafeesec"  
+            "abbr": "mcafeesec",
+            "level": "N/A",
+            "otherlevels": ["N/A"]
         },
         {	
-            "name": "Norton Tech",
-            "area": "Trade",
-            "company": "Saint-Gobain",
-            "description": ["Sign up for industry leading training from a world leader in abrasives manufacturing. Registering today gives you access to our Introductory courses."],
-            "alt": "Saint-Gobain",
-            "logo": "/images/norton_logo.png",
-            "bgimage":"",
-            "url": "https://www.nortonabrasives.com/en-us/norton-tech",
-            "hidden": "Yes",
-            "type": ["Certification"],
-            "category": ["Product"],
-            "other":[3],
-            "abbr": "norton"  
-        },
-        {	
-            "name": "Veritas",
+            "name": "Veritas Certified Specialist",
             "area": "IT",
             "company": "Veritas",
-            "description": ["Always Available. Always Protected. Always Optimizing. Access Data Instantly. Single Platform. Cloud Storage. Experience Data Agility. Optimize Storage. Instant Recovery. Services: Backup & Recovery, Copy Data Management, Information Governance."],
-            "alt": "Veritas",
+            "description": [
+                "The first step to validate technical knowledge and competency is to become a Veritas Certified Specialist (VCS) based on your specific area of product expertise with a Veritas product.",
+                "To achieve this level of certification, candidates must pass one proctored VCS exam based on a combination of Veritas training material, commonly referenced product documentation, and real-world job tasks."
+            ],
+            "alt": "Veritas logo",
             "logo": "/images/veritas.png",
             "bgimage":"",
-            "url": "https://www.veritas.com/services/education-services/certification",
+            "url": "https://www.veritas.com/services/education-services/certification/exams",
             "hidden": "No",
             "type": ["Certification"],
-            "category": ["Security" ],
+            "category": ["Product Specific" ],
             "other":[3, "multipe"],
-            "abbr": "veritas"  
+            "abbr": "veritas",
+            "level": "Specialist",
+            "otherlevels": ["Professional"]
         },
         {	
-            "name": "Red Hat",
+            "name": "Red Hat Certifications",
             "area": "IT",
             "company": "Red Hat",
-            "description": ["From Linux® training to DevOps certification, we have a hands-on training and practical certification path to fit your business goals."],
-            "alt": "Red Hat",
+            "description": [
+                "From Linux® training to DevOps certification, we have a hands-on training and practical certification path to fit your business goals.",
+                "Start your Red Hat training and certification journey."
+            ],
+            "alt": "Red Hat logo",
             "logo": "/images/redhat.png",
             "bgimage":"",
             "url": "https://www.redhat.com/en/services/training-and-certification",
             "hidden": "No",
             "type": ["Certification"],
-            "category": ["Cloud", "Operating Systems","Servers and Workstations","IT Support and Management", "Application"],
+            "category": ["Cloud Infrastructure", "Application"],
             "other":[3, "Multiple"],
-            "abbr": "red"		
+            "abbr": "red",
+            "level": "Various",
+            "otherlevels": ["Specialist", "Engineer", "Architect"]
         },
         {	
             "name": "Certified Ethical Hacker (CEH)",
             "area": "IT",
             "company": "EC-Council",
-            "description": ["Certified Ethical Hacker CEH v11 will teach you the latest commercial-grade hacking tools, techniques, and methodologies used by hackers and information security professionals to lawfully hack an organization."],
+            "description": [
+                "Enroll now to get details on Plans & Pricing",
+                "Certified Ethical Hacker CEH v11 will teach you the latest commercial-grade hacking tools, techniques, and methodologies used by hackers and information security professionals to lawfully hack an organization."
+            ],
             "alt": "EC-Council",
             "logo": "/images/ec.svg",
             "bgimage":"",
             "url": "https://www.eccouncil.org/programs/certified-ethical-hacker-ceh/",
             "hidden": "No",
             "type": ["Certification"],
-            "category": ["Security"],
+            "category": ["Cybersecurity"],
             "other":[3],
-            "abbr": "ethical"  
+            "abbr": "ethical",
+            "level": "N/A",
+            "otherlevels": ["N/A"]
         },
         {	
             "name": "Splunk",
             "area": "IT",
             "company": "Splunk",
-            "description": ["From novice to expert, Splunk can be harnessed by anyone with the right training — and it’s never been easier to get up to speed. Whether you're simply learning your way around the Splunk platform or getting certified to become a Splunk expert, there is a learning path or certification track for you!"],
-            "alt": "Splunk",
+            "description": [
+                "From novice to expert, Splunk can be harnessed by anyone with the right training — and it’s never been easier to get up to speed. Whether you're simply learning your way around the Splunk platform or getting certified to become a Splunk expert, there is a learning path or certification track for you!",
+                "Whether you are new to Splunk software or a seasoned pro, earning a Splunk certification adds value to your professional journey."
+            ],
+            "alt": "Splunk logo",
             "logo": "https://www.splunk.com/content/dam/splunk-logo-dark.svg",
             "bgimage":"",
             "url": "https://www.splunk.com/en_us/training.html",
             "hidden": "No",
             "type": ["Certification"],
-            "category": ["Servers and Workstations", "Application", "Monitoring and Administration"],
+            "category": ["Security", "Monitoring and Administration"],
             "other":[3],
-            "abbr": "splunk"  
+            "abbr": "splunk",
+            "level": "Various",
+            "otherlevels": ["Various"]
         },
         {	
-            "name": "Oracle",
-            "area": "IT",
-            "company": "Oracle",
-            "description": ["The Oracle Learning Explorer program offers entry-level training courses and accreditation for Oracle’s entire product portfolio. It was designed to empower professionals across the globe to begin cultivating valuable IT skills. Start your journey today."],
-            "alt": "Oracle",
-            "logo": "https://upload.wikimedia.org/wikipedia/commons/9/94/Logo_oracle.jpg",
-            "bgimage":"",
-            "url": "https://www.oracle.com/au/education/",
-            "hidden": "No",
-            "type": ["Certification"],
-            "category": ["Servers and Workstations", "Application", "Databases"],
-            "other":[3, "Multiple"],
-            "abbr": "oracle"  
-        },
-        {	
-            "name": "Oracle Cloud Infrastructure (OCI) Certification Paths",
+            "name": "Oracle Cloud Infrastructure Developer 2020 Certified Associate Certification",
             "area": "IT",
             "company": "Oracle",
             "description": ["Oracle Cloud Infrastructure (OCI) provides an infrastructure that matches the performance, control, and governance of enterprise datacenters, while delivering the scale, elasticity, and cost-savings of public clouds. Enable the transformation of your technology infrastructure to the cloud with OCI training."],
-            "alt": "Oracle",
+            "alt": "Oracle logo",
             "logo": "https://upload.wikimedia.org/wikipedia/commons/9/94/Logo_oracle.jpg",
             "bgimage":"",
             "url": "https://education.oracle.com/oracle-certification-path/pPillar_640",
             "hidden": "No",
             "type": ["Certification"],
-            "category": ["Cloud"],
+            "category": ["Cloud Infrastructure", "Product Specific"],
             "other":[3, "Multiple"],
-            "abbr": "oracle"  
+            "abbr": "oracle",
+            "level": "Associate",
+            "otherlevels": ["Professional"]
         },
         {	
             "name": "AWS",
@@ -426,62 +662,11 @@
             "url": "https://aws.amazon.com/training/",
             "hidden": "No",
             "type": ["Certification"],
-            "category": ["Cloud"],
+            "category": ["Cloud Infrastructure", "Cloud Services"],
             "other":[3, "Multiple"],
-            "abbr": "aws"  
+            "abbr": "aws",
+            "level": "Various",
+            "otherlevels": ["Various"]
         }
-    ],
-
-
-
-
-    "top":[
-        {
-            "name": "CompTIA IT Fundamentals",
-            "area": "IT",
-            "company": "CompTIA",
-            "description": ["CompTIA IT Fundamentals (ITF+) is an introduction to basic IT knowledge and skills that helps professionals decide if a career in IT is right for them. It also helps organizations prepare non-technical teams for digital transformation."],
-            "alt": "image",
-            "logo": "",
-            "bgimage":"https://comptiawebsite.blob.core.windows.net/webcontent/images/default-source/siteicons/logoitfundamentals.svg?sfvrsn=ce3ee1ff_2",
-            "url": "https://www.comptia.org/certifications/it-fundamentals",
-            "hidden": "No",
-            "type": ["Certification", "Fundamentals"],
-            "category": ["IT Fundamentals"],
-            "other":[3]
-        },
-        {
-            "name": "Microsoft Azure Fundamentals",
-            "area": "IT",
-            "company": "Microsoft",
-            "description": "This certification is intended for candidates who are just beginning to work with cloud-based solutions and services or are new to Azure.",
-            "alt": "image",
-            "logo": "",
-            "bgimage":"https://docs.microsoft.com/en-us/media/learn/certification/badges/microsoft-certified-fundamentals-badge.svg",
-            "url": "https://docs.microsoft.com/en-us/learn/certifications/azure-fundamentals/",
-            "hidden": "No",
-            "type": ["Certification"],
-            "category": ["Cloud", "Azure"],
-            "other":[3]
-        },
-        {   
-            "name": "Cisco Certified Technician (CCT)",
-            "area": "IT",
-            "company": "Cisco",
-            "description": "Cisco Certified Technicians have the skills to diagnose, restore, repair, and replace critical Cisco networking and system devices at customer sites. Technicians work closely with the Cisco Technical Assistance Center (TAC) to quickly and efficiently resolve support incidents.",
-            "alt": "image",
-            "logo": "",
-            "bgimage":"https://1000logos.net/wp-content/uploads/2016/11/Cisco-logo.png",
-            "url": "https://www.cisco.com/c/en/us/training-events/training-certifications/certifications/entry/technician-cct.html",
-            "hidden": "No",
-            "type": ["Certification"],
-            "category": ["Networking"],
-            "other":[3]
-    
-        }
-    ],
-
-    "carousel":[
-        
     ]
 }

@@ -33,10 +33,19 @@
                         <img src="<%=cert.logo%>%>" alt="<%=cert.alt%>" class="img-fluid custom-img mx-auto d-block card-img-top">
                         <div class="card-body">
                             <h3 class="card-title" style="height: 100px;">
-                            <%=cert.name%>
+                                <%=cert.name%>
                             </h3>
-                            <div class="text-muted">Type: 
-                                <%=cert.type%>
+                            <div>
+                                <span class="text-muted">Certification/Training provider: </span>
+                                <%=cert.company%>
+                            </div>
+                            <div>
+                                <span class="text-muted">Level: </span>
+                                <%=cert.level%>
+                            </div>
+                            <div>
+                                <span class="text-muted">Other levels: </span>
+                                <%=cert.otherlevels.join(", ")%>
                             </div>
                             <div class="text-muted">Category: 
 								<%for (let item in cert.category){%>
@@ -54,13 +63,19 @@
                     <!-- Modal -->
                     <div class="modal fade" id="<%=cert.abbr%>" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                        <div class="modal-content">
+                        <div class="modal-content p-4">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="detailModalLabel"><%=cert.name%></h5>
+                                <h3 class="modal-title" id="detailModalLabel">
+                                    <img src="<%=cert.logo%>" class="img-fluid custom-img mx-auto d-block"/>
+                                    <p><%=cert.name%></p>
+                                    
+                                </h3>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
-                                <%=cert.description%>
+                                <h6 class="mb-3"><%=cert.description[0]%></h6>
+                                <p class="mb-3"><%=cert.description[1]%></p>
+                                <b class="mb-3">Click "Go to website" for more details</b>
                             </div>
                             <div class="modal-footer">
                             <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -74,4 +89,3 @@
 		</div>
         <%- include('partials/contentnav') %>
 	</div>
-	<script src="/js/filterHover.js"></script>

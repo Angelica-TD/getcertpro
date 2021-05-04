@@ -9,8 +9,17 @@
                         <h3 class="card-title" style="height: 100px;">
                         <%=advertised[item].name%>
                         </h3>
-                        <div class="text-muted">Type: 
-                            <%=advertised[item].type%>
+                        <div>
+                            <span class="text-muted">Certification/Training provider: </span>
+                            <%=advertised[item].company%>
+                        </div>
+                        <div>
+                            <span class="text-muted">Level: </span>
+                            <%=advertised[item].level%>
+                        </div>
+                        <div>
+                            <span class="text-muted">Other levels: </span>
+                            <%=advertised[item].otherlevels.join(", ")%>
                         </div>
                         <div class="text-muted">Category: 
                             <a href="/categories/<%=advertised[item].category%>?page=1" class="rounded-pill btn btn-sm btn-light mb-2"><%=advertised[item].category%></a>
@@ -26,13 +35,18 @@
                 <!-- Modal -->
                 <div class="modal fade" id="<%=advertised[item].abbr%>" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content">
+                    <div class="modal-content p-4">
                         <div class="modal-header">
-                        <h5 class="modal-title" id="detailModalLabel"><%=advertised[item].name%></h5>
+                            <h3 class="modal-title" id="detailModalLabel">
+                                <img src="<%=advertised[item].logo%>" class="img-fluid custom-img mx-auto d-block"/>
+                                <p><%=advertised[item].name%></p>
+                            </h3>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <%=advertised[item].description%>
+                            <h6 class="mb-3"><%=advertised[item].description[0]%></h6>
+                            <p class="mb-3"><%=advertised[item].description[1]%></p>
+                            <b class="mb-3">Click "Go to website" for more details</b>
                         </div>
                         <div class="modal-footer">
                         <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>

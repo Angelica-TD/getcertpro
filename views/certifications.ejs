@@ -31,12 +31,22 @@
                             <h3 class="card-title" style="height: 100px;">
                             <%=advertised[item].name%>
                             </h3>
-                            <div class="text-muted">Type: 
-                                <%=advertised[item].type%>
+                            <div>
+                                <span class="text-muted">Certification/Training provider: </span>
+                                <%=advertised[item].company%>
+                            </div>
+                            <div>
+                                <span class="text-muted">Level: </span>
+                                <%=advertised[item].level%>
+                            </div>
+                            <div>
+                                <span class="text-muted">Other levels: </span>
+                                <%=advertised[item].otherlevels.join(", ")%>
                             </div>
                             <div class="text-muted">Category: 
                                 <a href="/categories/<%=advertised[item].category%>?page=1" class="rounded-pill btn btn-sm btn-light mb-2"><%=advertised[item].category%></a>
                             </div>
+                            
                             
                         </div>
                         <div class="card-footer text-center border-0 p-0">
@@ -48,9 +58,12 @@
                     <!-- Modal -->
                     <div class="modal fade" id="<%=advertised[item].abbr%>" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                        <div class="modal-content">
+                        <div class="modal-content p-4">
                             <div class="modal-header">
-                            <h5 class="modal-title" id="detailModalLabel"><%=advertised[item].name%></h5>
+                            <h3 class="modal-title" id="detailModalLabel">
+                                <img src="<%=advertised[item].logo%>" class="img-fluid custom-img mx-auto d-block"/>
+                                <p><%=advertised[item].name%></p>
+                            </h3>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
                             <div class="modal-body">
@@ -72,13 +85,23 @@
                 <div class="card h-100 p-2 shadow-sm">
                     <img src="<%=cert.logo%>" alt="<%=cert.alt%>" class="img-fluid custom-img mx-auto d-block card-img-top">
                     <div class="card-body">
-                        <h3 class="card-title" style="height: 100px;">
+                        <h3 class="card-title">
                         <%=cert.name%>
                         </h3>
-                        <div class="text-muted">Company: 
+                        <div>
+                            <span class="text-muted">Certification/Training provider: </span>
                             <%=cert.company%>
                         </div>
-                        <div class="text-muted">Category: 
+                        <div>
+                            <span class="text-muted">Level: </span>
+                            <%=cert.level%>
+                        </div>
+                        <div>
+                            <span class="text-muted">Other levels: </span>
+                            <%=cert.otherlevels.join(", ")%>
+                        </div>
+                        <div>
+                            <span class="text-muted">Category: </span>
                             <%for (let item in cert.category){%>
                                 <a href="/categories/<%=cert.category[item]%>?page=1" class="rounded-pill btn btn-sm btn-light mb-2"><%=cert.category[item]%></a>
                             <%}%>
@@ -139,4 +162,3 @@
 
 </div>
 		<!-- END MIDDLE COLUMN CONTENT -->
-        <script src="/js/filterHover.js"></script>
