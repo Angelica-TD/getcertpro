@@ -58,15 +58,15 @@
                     <!-- Modal -->
                     <div class="modal fade" id="<%=advertised[item].abbr%>" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
                         <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                        <div class="modal-content p-4">
+                        <div class="modal-content">
                             <div class="modal-header">
-                            <h3 class="modal-title" id="detailModalLabel">
-                                <img src="<%=advertised[item].logo%>" class="img-fluid custom-img mx-auto d-block"/>
-                                <p><%=advertised[item].name%></p>
-                            </h3>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
+                            <div class="modal-body px-5 py-2">
+                                <h3 class="modal-title" id="detailModalLabel">
+                                    <img src="<%=advertised[item].logo%>" class="img-fluid custom-img mx-auto d-block"/>
+                                    <p><%=advertised[item].name%></p>
+                                </h3>
                                 <%=advertised[item].description%>
                             </div>
                             <div class="modal-footer">
@@ -116,16 +116,15 @@
                 <!-- Modal -->
                 <div class="modal fade" id="<%=cert.abbr%>" tabindex="-1" aria-labelledby="detailModalLabel" aria-hidden="true">
                     <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-                        <div class="modal-content p-4">
+                        <div class="modal-content">
                             <div class="modal-header">
-                            <h3 class="modal-title" id="detailModalLabel">
-                                <img src="<%=cert.logo%>" class="img-fluid custom-img mx-auto d-block"/>
-                                <p><%=cert.name%></p>
-                                
-                            </h3>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
                             </div>
-                            <div class="modal-body">
+                            <div class="modal-body px-5 py-2">
+                                <img src="<%=cert.logo%>" class="img-fluid modal-img mx-auto mb-2 d-block"/>
+                                <h3 class="modal-title" id="detailModalLabel">
+                                    <p><%=cert.name%></p>
+                                </h3>
                                 <h6 class="mb-3"><%=cert.description[0]%></h6>
                                 <p class="mb-3"><%=cert.description[1]%></p>
                                 <b class="mb-3">Click "Go to website" for more details</b>

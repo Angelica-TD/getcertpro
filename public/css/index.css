@@ -22,6 +22,12 @@ a{
 	object-fit: contain;
 }
 
+.modal-img{
+    width: 100px;
+	height: 50px;
+	object-fit: contain;
+}
+
 .hero-img{
     /* width: 700px; */
 	height: 400px;
