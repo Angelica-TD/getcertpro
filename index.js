@@ -30,7 +30,7 @@ app.use(express.json())
 app.get('/', (req, res)=>{
 	let title = "Find the right certification - GetCertPro"
 	dataArray = new shuffle(data).shuffle()
-	description = "Searching for certifications does not have to be hard, find the right certification for you in a couple of clicks."
+	description = "Searching for certifications does not have to be hard, find the right certification for you in a couple of clicks. We have included certifications you need in Networking, Cybersecurity, Cloud Services, Cloud Infrastructure, IT Service Management, Project Management and much more."
 	// console.log(noDupes)
 	res.render("index", {...contentData, noDupes, title, description})
 })
