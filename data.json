@@ -667,6 +667,27 @@
             "abbr": "aws",
             "level": "Various",
             "otherlevels": ["Various"]
+        },
+        {	
+            "name": "AWS Cloud Practitioner",
+            "area": "IT",
+            "company": "Amazon",
+            "description": [
+                "The AWS Certified Cloud Practitioner examination is intended for individuals who have the knowledge and skills necessary to effectively demonstrate an overall understanding of the AWS Cloud, independent of specific technical roles addressed by other AWS Certifications.",
+                "Becoming an AWS Certified Cloud Practitioner is a recommended, optional step toward achieving an Associate-level or Specialty certification."
+            ],
+            "alt": "Amazon Cloud practitioner logo",
+            "logo": "/images/awscprac.png",
+            "bgimage":"",
+            "url": "https://www.aws.training/SessionSearch?pageNumber=1&courseId=17675",
+            "hidden": "No",
+            "type": ["Certification"],
+            "category": ["Cloud Infrastructure", "Cloud Services"],
+            "other":[3, "Multiple", "new"],
+            "abbr": "awscloudprac",
+            "level": "Foundational",
+            "otherlevels": ["Associate", "Professional"]
         }
+
     ]
 }

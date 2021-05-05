@@ -7,7 +7,7 @@ module.exports = function paginate(data, advertised, currentPage){
     results.noAdLength = data.length
     results.next = {
         current: currentPage,
-        count: Math.ceil(results.fullLength/limit),
+        count: Math.ceil(results.fullLength/(limit-advertised)),
         page: currentPage + 1,
         visible: true
         }
@@ -20,7 +20,7 @@ module.exports = function paginate(data, advertised, currentPage){
         results.previous.visible=false
     }
 
-    if(currentPage>=(results.fullLength/limit)){
+    if(currentPage>=(results.fullLength/(limit-advertised))){
         results.next.visible=false
     }
 

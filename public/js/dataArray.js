@@ -4,6 +4,8 @@ let contentData = JSON.parse(rawData)
 
 let dataArray = []
 for(let item of contentData.allcerts){
-    dataArray = dataArray.concat(item)
+    if(!item.other.includes('new')){
+        dataArray = dataArray.concat(item)
+    }
 }
 module.exports = dataArray

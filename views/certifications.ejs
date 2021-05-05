@@ -11,7 +11,7 @@
             </li>
         </ol>
     </nav>
-    <h4><%=paged.noAdLength%> results</h4>
+    <h4><%=paged.fullLength%> results</h4>
     <h4><%=paged.next.current%> out of <%=paged.next.count%> pages</h4>
     <div>
         Categories:
@@ -49,7 +49,9 @@
                                 <%=advertised[item].otherlevels.join(", ")%>
                             </div>
                             <div class="text-muted">Category: 
-                                <a href="/categories/<%=advertised[item].category%>?page=1" class="rounded-pill btn btn-sm btn-light mb-2"><%=advertised[item].category%></a>
+                                <%for (let category in advertised[item].category){%>
+                                    <a href="/categories/<%=advertised[item].category[category]%>?page=1" class="rounded-pill btn btn-sm btn-light mb-2"><%=advertised[item].category[category]%></a>
+                                <%}%>
                             </div>
                             
                             
@@ -72,7 +74,9 @@
                                     <img src="<%=advertised[item].logo%>" class="img-fluid custom-img mx-auto d-block"/>
                                     <p><%=advertised[item].name%></p>
                                 </h3>
-                                <%=advertised[item].description%>
+                                <h6 class="mb-3"><%=advertised[item].description[0]%></h6>
+                                <p class="mb-3"><%=advertised[item].description[1]%></p>
+                                <b class="mb-3">Click "Go to website" for more details</b>
                             </div>
                             <div class="modal-footer">
                             <button type="button" class="btn btn-sm btn-secondary" data-bs-dismiss="modal">Close</button>
