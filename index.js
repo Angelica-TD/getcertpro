@@ -28,9 +28,9 @@ app.use(express.json())
 //--------ROUTES--------------------
 //home page route
 app.get('/', (req, res)=>{
-	let title = "GetCertPro"
+	let title = "Find the right certification - GetCertPro"
 	dataArray = new shuffle(data).shuffle()
-	description = "GetCertPro lists all helpful certifications for all levels beginner to expert and all price ranges from free certifications onward. Includes certifications from Microsoft, Cisco, Axelos, Mimecast, Sophos, Atlassian, New Relic, and much more."
+	description = "Searching for certifications does not have to be hard, find the right certification for you in a couple of clicks."
 	// console.log(noDupes)
 	res.render("index", {...contentData, noDupes, title, description})
 })
