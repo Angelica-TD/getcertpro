@@ -24,12 +24,17 @@
         <%if(advertised){%>
             <%for(let item in advertised){%>
                 <div class="col">
-                    <div class="card h-100 p-2 shadow-sm">
-                        <span class="badge rounded-pill bg-danger w-25">Advertised</span>
+                    <div class="card h-100 p-2 new-shadow">
+                        <div class="d-flex justify-content-end">
+                            <span class="badge p-2 rounded-pill my-pill-bg w-25">New!</span>
+                        </div>
+                        
                         <img src="<%=advertised[item].logo%>" alt="<%=advertised[item].alt%>" class="img-fluid custom-img mx-auto d-block card-img-top">
+                        
                         <div class="card-body">
                             <h3 class="card-title" style="height: 100px;">
                             <%=advertised[item].name%>
+                            
                             </h3>
                             <div>
                                 <span class="text-muted">Certification/Training provider: </span>

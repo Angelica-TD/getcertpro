@@ -5,7 +5,7 @@ let contentData = JSON.parse(rawData)
 
 let advertised = []
 for(let item of contentData.allcerts){
-    if(item.other.includes('ad')){
+    if(item.other.includes('new')){
         advertised = advertised.concat(item)
     }
 }
