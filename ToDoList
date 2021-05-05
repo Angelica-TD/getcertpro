@@ -31,10 +31,10 @@ task 3:
 30/04/21
 For Website
 - change " from" to " from." (add dot) done
-- Fix home page image - "Under construction"
+- Fix home page image - "Under construction" done
 - Fix Next page going to last +1 pages done
 - Fix spelling errors in associate ccna done
-- Fix generic desciption for cert specific description
+- Fix generic desciption for cert specific description partially done
 - [ Decide]  on version control and stick to it :)
 - Fix ISO link and add text in the image logo "dont use their logo" done
 
@@ -52,3 +52,36 @@ Ongoing
 
 04/05
 -ask about pexip https://www.pexip.com/training, ieee, iso
+
+05/05
+- implement functionality where if a cert is new, it should have the "new" badge and appear first on the all certs page and the filtered by category page
+
+
+
+
+
+
+
+Notification: Added new certification
+Must have: 
+    Name of the cert
+    Company
+    Target audience of the cert
+    Certification purpose
+    Link to the site
+
+"We have added a new certification: (Name of cert) for (Company).
+This certification is useful if you are (Target audience) (Certification purpose).
+Follow this link to get redirected to the certification: (Link to our site)"
+
+
+
+
+
+
+
+
+
+
+
+
